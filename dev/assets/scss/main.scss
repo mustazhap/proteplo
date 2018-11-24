@@ -1,0 +1,83 @@
+// main
+@import 'settings';
+
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+  font-family: $Roboto;
+  background: #fff;
+  position: relative;
+  *{
+    &::selection{
+      background: #00d148;
+      color: white;
+    }
+  }
+
+}
+
+a{
+  text-decoration: none;
+
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+// import files of blocks
+// common blocks
+@import "libs";
+@import "../../blocks/common/section/section";
+@import "../../blocks/common/nav/nav";
+@import "../../blocks/common/input/input";
+@import "../../blocks/common/button/button";
+@import "../../blocks/common/product/product";
+@import "../../blocks/common/breadcrumbs/breadcrumbs";
+@import "../../blocks/common/aside/aside";
+@import "../../blocks/common/category/category";
+@import "../../blocks/common/filter/filter";
+@import "../../blocks/common/select/select";
+  
+
+
+
+
+
+
+// page blocks
+@import "../../blocks/page/header/header";
+@import "../../blocks/page/promo/promo";
+@import "../../blocks/page/advantages/advantages";
+@import "../../blocks/page/help/help";
+@import "../../blocks/page/feedback/feedback";
+@import "../../blocks/page/block/block";
+@import "../../blocks/page/brands/brands";
+@import "../../blocks/page/review/review";
+@import "../../blocks/page/news/news";
+@import "../../blocks/page/info/info";
+@import "../../blocks/page/footer/footer";
+@import "../../blocks/page/favorites/favorites";
+
+// Trademarks
+@import "../../blocks/page/trademarks/trademarks";
+@import "../../blocks/page/other/other";
+
+// Item
+@import "../../blocks/common/item/item";
+
+
+
+
+
+
+
+
+
+
+
+
+
+// importing media queries
+@import "media";

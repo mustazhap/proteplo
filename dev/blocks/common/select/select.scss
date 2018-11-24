@@ -1,0 +1,84 @@
+.select {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-size: 13px;
+    color: #444;
+    border: none;
+    height: 26px;
+    width: 145px;
+  }
+  .select-styled {
+    position: absolute; 
+    top: 0;
+    right: 0;
+    padding: 0 10px !important;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+    padding: 8px 15px;
+    transition: all 0.2s ease-in;
+    border-radius: 5px;
+    &:after {
+      content:"";
+      background: url("../img/select/select.png");
+      position: absolute;
+      width: 8px;
+      height: 5px;
+      display: block;
+      top: 10px;
+      right: 7px;
+    }
+    &:hover {
+      background-color: darken(white, 2);
+    }
+   
+  }
+  .select-hidden{
+    opacity: 0;
+  }
+
+  .act{
+    background: #ebebeb;
+  }
+  .select_active{
+    &:after {
+      content:"";
+      background: url("../img/select/select.png");
+      position: absolute;
+      width: 8px;
+      height: 5px;
+      display: block;
+      top: 12px;
+      right: 7px;
+      transform: rotate(180deg);
+    }
+  }
+  .select-options {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #FFF;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    li {
+      margin: 0;
+      transition: all 0.15s ease-in;
+      padding: 0 10px;
+      height: 30px;
+      line-height: 28px;
+      cursor: pointer;
+      &:hover {
+        background: #ebebeb;
+      }
+    }
+  }

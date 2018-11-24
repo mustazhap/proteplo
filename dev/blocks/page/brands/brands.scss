@@ -1,0 +1,43 @@
+.brands{
+    &__wrapper{
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__title{
+        a{
+            color: #0066cc;
+        }
+
+        span{
+            color: #ccc;
+            margin-left: 10px;
+        }
+    }
+
+    &__item{
+        width: 220px;
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-img{
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &-caption{
+            margin-top: 20px;
+            color: #0066cc;
+            font-size: 15px;
+            text-align: center;
+        }
+
+    }
+}

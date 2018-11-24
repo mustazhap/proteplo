@@ -1,0 +1,59 @@
+.feedback{
+    &__wrapper{
+        margin: 45px 0;
+        padding: 25px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        *{
+            box-sizing: border-box;
+        }
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title{
+        margin: 0 0 15px 0;
+        font-size: 20px;
+        font-weight: bold;
+        
+        &:nth-child(2){
+            margin: 10px 0 15px 0;
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
+    
+    &__phone{
+        max-width: 290px;
+        font-size: 20px;
+        color: #444;
+        padding: 0px 20px;
+        box-shadow: inset 0px 2px 1px #EFEFEF;
+        width: 290px;
+        border: 1px solid transparent;
+        outline: none;
+        height: 41px;
+        border-radius: 10px;
+        font-weight: 300;
+        font-family: $Roboto;
+        margin-bottom: 20px;
+        transition: border-color .2s;
+    }
+
+    .button{
+        font-size: 14px;
+        width: 290px;
+    }
+
+    .input__checkbox{
+        margin-top: 13px;
+    }
+
+
+}

@@ -1,0 +1,33 @@
+.breadcrumbs{
+    &__wrapper{
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        padding: 18px 0px 6px 0px;
+        display: flex;
+    }
+
+    &__item{
+        margin-right: 10px;
+        padding-right: 15px;
+        color: #0066cc;
+        position: relative;
+
+        &::before{
+            content: "»";
+            position: absolute;
+            right: 0;
+            top: 0;
+            color: #444;
+        }
+
+        &:last-child{
+            margin-right: 0;
+            padding-right: 0;
+            color: #444;
+            &:before{
+                content: " ";
+            }
+        }
+    }
+}

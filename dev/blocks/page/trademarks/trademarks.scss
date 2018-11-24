@@ -1,0 +1,67 @@
+.trademarks{
+    &__wrapper{
+        display: flex;
+    }
+    &__body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title{
+        display: flex;
+        align-items: center;
+        font-weight: normal;
+
+        .section__title{
+            margin: 0;
+        }
+    }
+
+    &__plit{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__list{
+        display: none;
+        flex-direction: column;
+    }
+
+    &__text{
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        margin-top: 30px;
+        transition: all .5s ease;
+        p{
+            margin-bottom: 5px;
+            transition: all .5s ease;
+        }
+
+        &_more{
+            display: flex;
+            font-size: 14px;
+            span{
+                margin-right: 3px;
+            }
+
+            a{
+                color: #06C;
+                font-size: 14px;
+            }
+        }
+
+        &_hidden{
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+        }
+    }
+
+    &__content{
+        
+    }
+
+    
+
+}

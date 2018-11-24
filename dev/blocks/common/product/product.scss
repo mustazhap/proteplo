@@ -1,0 +1,448 @@
+.product{
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+    padding: 45px 20px 20px 20px; 
+    min-height: 270px;
+    transition: box-shadow .2s;
+    box-sizing: border-box;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    *{
+        box-sizing: border-box;
+    }
+
+    // Продукт с внутренной тенью
+    &_type2{
+        .product__img{
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .product__price{
+            padding-bottom: 0;
+        }
+
+        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5) inset;
+        min-height: auto;
+        &:hover{
+            box-shadow: inset 0px 0px 0px 2px #9FE780, 0px 0px 10px 2px #E0E0E0;
+        }
+    }
+ 
+    
+
+    // Продукт на главном без рамки в слайдерах с тенью при навдении
+    &:hover{
+        box-shadow: inset 0px 0px 0px 2px #9fe780, 0px 0px 10px 2px #e0e0e0;
+    }
+
+    // Продукт в других местах при наведении оранжевая рамка
+    &_item{
+        width: 223px;
+        margin: 10px 6px 10px 6px;
+        padding: 15px;
+        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+
+        &:hover{
+            box-shadow: inset 0px 0px 0px 1px #ff8400, 0px 0px 10px 2px #E0E0E0;
+        }
+    }
+
+    // Синяя рамка при наведении
+    &_item-blue{
+        &:hover{
+            box-shadow: inset 0px 0px 0px 1px #188dc9, 0px 0px 10px 2px #E0E0E0;
+        }
+    }
+
+    &__buttons{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 100%;
+        margin-top: 15px;
+
+        &-row{
+            display: flex;
+            margin-bottom: 10px;
+            position: relative;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__input-text{
+        position: absolute;
+        top: 4px;
+        left: 5px;
+        font-size: 12px;
+        display: block;
+        color: #444;
+        font-size: 12px;
+
+    }
+    &__button{
+            cursor: pointer;
+            position: relative;
+            border: 1px solid #ccc;
+            height: 34px;
+            width: 48px;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                top: 50%;
+                margin-top: -15px;
+                left: 50%;
+                margin-left: -15px;
+            }
+
+        &-compare{
+            background: url("../img/favorites/fa-ic-1.png") no-repeat center !important;   
+            &--act{
+                background: url("../img/favorites/fa-ic-1-active.png") no-repeat center !important;   
+
+            }         
+        }
+
+        &-hint{
+            background: url("../img/favorites/fa-ic-2.png") no-repeat center !important;
+            &--act{
+                background: url("../img/favorites/fa-ic-2-active.png") no-repeat center !important;   
+
+            } 
+        }
+    }
+
+    // Плажка хит на главном
+    &__hit{
+        background-color: #ff8400;
+        position: absolute;
+        left: -6px;
+        top: 15px;
+        padding: 5px 10px;
+        font-size: 13px;
+        color: #fff;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+
+        &:before{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            border-style: solid;
+            border-width: 0 6px 4px 0;
+            border-color: transparent #ff8400 transparent transparent;
+        }
+    }
+
+
+    // Плажки хит и скидка
+    &__blank{
+        position: absolute;
+        top: 15px;
+        left: -6px;
+        display: flex;
+        flex-direction: column;
+        div{
+            &:first-child{
+                margin-bottom: 7px;
+            }
+        }
+
+        &-sale{
+            width: 93px;
+            height: 26px;
+            font-size: 13px;
+            color: white;
+            font-weight: 400;
+            text-align: center;
+            box-sizing: border-box;
+            padding-top: 3px;
+            color: #444;
+            background: #F8EB42;
+            height: 23px;
+        }
+
+        &-hit{
+            width: 93px;
+            font-size: 13px;
+            color: white;
+            font-weight: 400;
+            text-align: center;
+            box-sizing: border-box;
+            padding-top: 3px;
+            background: #D76E07;
+            margin-bottom: 7px;
+            height: 23px;
+        }
+    }
+
+    &__star{
+        top: 15px;
+        right: 12px;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        display: flex;
+
+        li{
+            list-style-type:none;
+            width: 12px;
+            height: 12px;
+            margin-right: 5px;
+            background: url("../img/product/star.svg") no-repeat;
+        }
+    }
+
+    &__vendor{
+        position: absolute;
+        right: 12px;
+        top: 30px;
+        font-size: 14px;
+        color: #444444;
+    }
+
+    &__img{
+        width: 160px;
+        height: 170px;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        img{
+            width: auto !important;
+        }
+    }
+
+    &__name{
+        color: #0066cc;
+        font-size: 14px;
+        line-height: 19px;
+        min-height: 60px;
+    }
+
+    &__price{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 20px;
+        position: relative;
+        
+        &-label{
+            margin-right: 5px;
+            font-size: 14px;
+            color: #444444;
+        }
+
+        &-old{
+            text-decoration: line-through;
+            color: #999999;
+            word-spacing: -1px;
+            font-size: 12px;
+        }
+
+        &-new{
+            color: #444444;
+            font-size: 24px;
+        }
+    }
+
+    &__stock{
+        margin-top: 5px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        &_instock{
+            font-size: 12px;
+            color: #49bc3a;
+
+            &:before{
+                background-color: #49bc3a;
+                border-radius: 50%;
+                content: "";
+                display: inline-block;
+                height: 10px;
+                left: 0;
+                margin-right: 5px;
+                position: relative;
+                top: 0;
+                width: 10px;
+            }
+
+        }
+
+        &_canceld{
+            font-size: 12px;
+            color: #ff8400;
+
+            &:before{
+                background: rgba(0, 0, 0, 0) url("../img/product/recover.png") no-repeat scroll 0 0;
+                content: "";
+                display: inline-block;
+                height: 10px;
+                left: 0;
+                margin-right: 5px;
+                position: relative;
+                top: 0;
+                width: 10px;
+            }
+        }
+    }
+
+    // Хэдер продуктов в view list
+    &-header{
+        display: flex;
+        width: 100%;
+        color: #333;
+        font-size: 14px;
+        font-weight: 600;
+        background: #e0e0e0;
+        border: 1px solid #e0e0e0; 
+        height: 20px;
+
+
+        *{
+            box-sizing: border-box;
+
+        }
+        &__articule{
+            width: 10%;
+            padding-left: 20px;
+        }
+
+        &__name{
+            width: 50%;
+            padding-left: 20px;
+        }
+
+        &__price{
+            width: 10%;
+            padding-left: 20px;
+        }
+    }
+
+    // Продукт list формате
+    &-list{
+        height: 119px;
+        width: 100%;
+        padding: 0;
+        margin: -1px 0 0 0;
+        display: flex;
+        border: #EEE solid 1px;
+        *{
+            box-sizing: border-box;
+        }
+
+        &:hover{
+            border: #FFF solid 1px;
+            box-shadow: inset 0px 0px 0px 1px rgba(255, 132, 0, 1);
+     
+        }
+      
+        &__articule{
+            padding-left: 20px;
+            width: 10%;
+            font-size: 14px;
+            color: #444444;
+            padding-top: 20px;
+        }
+
+        &__name{
+            width: 50%;
+            padding-left: 20px;
+            padding-top: 20px;
+            a{
+                color: #06C;
+                font-style: 14px;
+            }
+        }
+
+        &__price{
+            width: 10%;
+            display: flex;
+            padding-top: 20px;
+            padding-left: 20px;
+            flex-direction: column;
+        }
+
+        &__old{
+            white-space: nowrap;
+            color: red;
+            text-decoration: line-through;
+            font-size: 13px;
+        }
+
+        &__new{
+            font-size: 24px;
+            line-height: 24px;
+            color: #444444;
+            span{
+                font-size: 14px;
+                margin-left: 5px;
+            }
+        }
+
+        &__buttons{
+
+            width: 30%;
+            padding-right: 20px;
+            padding-top: 20px;
+            display: flex;
+            justify-content: flex-end;
+            .product__buttons-row{
+                .button_product{
+                    height: 30px;
+                    width: 85px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0;
+                }
+
+                .prompt{
+                    width: 43px;
+                    height: 30px;
+                }
+
+            }
+        }
+    }
+}
+
+.prompt {
+    position: relative;
+}
+.prompt div {
+    border: 1px solid #666;
+    border-radius: 3px;
+    padding: 5px 8px;
+    font-size: 13px;
+    font-weight: 300;
+    visibility: hidden;
+    width: 100px;
+    text-align: center;
+    margin-top: -50px;
+    margin-left: -10px;
+    background: #fff;
+    color: #444;
+    box-shadow: 0 0 3px;
+    display: none;
+    display: flex;
+    z-index: 111;
+  }

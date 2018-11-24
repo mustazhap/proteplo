@@ -1,0 +1,77 @@
+.nav{
+    width: 100%;
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        margin: 0;
+
+        li{
+            list-style: none;
+            width: 14.2%;
+            text-align: center;
+
+            a{
+                font-size: 14px;
+                color: #444;
+                transition: color .2s;
+                text-decoration: none;
+
+                &:hover{
+                    color: #0066cc;
+                    text-decoration: underline;
+                }
+            }
+            
+        }
+    }
+
+    &__item{
+        position: relative;
+        transition: all 0.2s ease 0s;
+
+        &:before{
+            content: "";
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            width: 8px;
+            height: 8px;
+            margin-top: -2px;
+            background: url("../img/header/arrow-down.svg") no-repeat;
+            transition: all 0.2s ease 0s;
+        }
+
+        &:hover{
+            &:before{
+                opacity: 0;
+            }
+        }
+    }
+
+    &__drop{
+        position: absolute;
+        left: 0;
+        top: 62px;
+        opacity: 0;
+        z-index: 10;
+        visibility: hidden;
+        background-color: #fff;
+        text-align: left;
+        border: 1px solid #ebebeb;
+        padding: 10px 20px;
+        border-top: none;
+        transition: all .5s ease;
+
+        li{
+            list-style: none;
+        }
+
+        a{
+            font-size: 14px;
+            color: #444;
+            white-space: nowrap;
+            transition: color .2s;
+        }
+    }
+}

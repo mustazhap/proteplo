@@ -1,0 +1,25 @@
+.section{
+    display: flex;
+    justify-content: center;
+
+    &__wrapper{
+      width: 1180px;
+      margin-left: 20px;
+      margin-right: 20px;
+      box-sizing: border-box;
+    }
+
+    &__title{
+      margin: 0;
+      font-size: 34px;
+      color: #444;
+      margin-bottom: 20px;
+      font-family: $RobotoCondensed;
+      font-weight: 300;
+      
+      &_link{
+        color: #0066cc;
+      }
+    }
+  }
+  

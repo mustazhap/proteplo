@@ -1,0 +1,19 @@
+.info{
+    margin-bottom: 25px;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title{
+        font-size: 28px;
+        margin: 15px 0;
+    }
+    p{
+        font-size: 14px;
+        margin: 0;
+        color: #444;
+        margin-bottom: 10px;
+        line-height: 20px;
+    }
+}

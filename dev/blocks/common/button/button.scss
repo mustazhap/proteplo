@@ -1,0 +1,88 @@
+.button{
+    border-radius: 3px;
+    line-height: 28px;
+    border: none;
+    color: white;
+    background: linear-gradient(to bottom, rgba(98, 209, 82, 1) 0%, rgba(74, 188, 58, 1) 100%);
+    padding: 5px 30px;
+    cursor: pointer;
+    transition: all .2s;
+    position: relative;
+    text-decoration: none;
+
+    span{
+        position: relative;
+        z-index: 4;
+        text-decoration: none;
+    }
+
+    &:after{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 2;
+        background: #4dbe3e;
+        background: -moz-linear-gradient(top, #4dbe3e 0%, #5fcf50 100%);
+        background: -webkit-linear-gradient(top, #4dbe3e 0%, #5fcf50 100%);
+        background: linear-gradient(to bottom, #4dbe3e 0%, #5fcf50 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4dbe3e', endColorstr='#5fcf50', GradientType=0);
+        -webkit-transition: all .2s;
+        transition: all .2s;
+        box-sizing: border-box;
+        border-radius: 3px;
+    }
+
+    &:hover{
+        &:after{
+            opacity: 1;
+        }
+        text-decoration: none;
+
+    }
+
+    &__search{
+        border-left: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        height: 40px;
+        width: 100px;
+    }
+
+    &_product{
+        height: 34px;
+        outline: none;
+        border: none;
+        border-radius: 0;
+        color: white;
+        box-shadow: 1px 1px 0px 0px #E3E4DF;
+
+        &:after{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            z-index: 2;
+            background: #4dbe3e;
+            background: -moz-linear-gradient(top, #4dbe3e 0%, #5fcf50 100%);
+            background: -webkit-linear-gradient(top, #4dbe3e 0%, #5fcf50 100%);
+            background: linear-gradient(to bottom, #4dbe3e 0%, #5fcf50 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4dbe3e', endColorstr='#5fcf50', GradientType=0);
+            -webkit-transition: all .2s;
+            transition: all .2s;
+            box-sizing: border-box;
+        }
+
+        &-input{
+            width: 40%;
+            padding: 0;
+            height: 27px;
+        }
+    }
+}

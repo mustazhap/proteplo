@@ -1,0 +1,47 @@
+.category{
+    width: 220px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+
+    &__caption{
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+        font-weight: 500;
+        position: relative;
+        text-align: left;
+
+       
+    }
+
+    span{
+        font-size: 14px;
+        color: #CCC;
+        margin-left: 7px;
+    }
+
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    li{
+        list-style: none;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        a{
+            color: #06C;
+            font-size: 14px;
+        }
+    }
+
+    &_depth2{
+        padding-left: 15px;
+    }
+    &_depth3{
+        padding-left: 30px;  
+    }
+}
