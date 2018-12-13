@@ -1,0 +1,33 @@
+.pagination{
+    display: none;
+    margin: 30px 0 50px;
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        
+       
+    }
+    &__el{
+        height: 28px;
+        width: 28px;
+        line-height: 28px;
+        text-decoration: none;
+        border: 1px solid #444;
+        border-radius: 5px;
+        background: white;
+        margin: 0 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+    }
+
+    &_blue{
+        background: #0066cc;
+        color: white;
+        
+    }
+    
+}

@@ -19,6 +19,12 @@
 
 <header>
     <div class="header__mob">
+        <div class="header__mob-search">
+                <div class="header-middle__search">
+                        <input type="text" class="input input__text input__text_search" placeholder="Название товара или артикул" value="" autocomplete="off">
+                        <button class="button button__search"><span>Найти</span></button>
+                    </div>
+        </div>
             <div class="burger-wrap">
                 <a class="burger">
                     <span class="line line-1"></span>
@@ -26,17 +32,76 @@
                     <span class="line line-3"></span>
                 </a>
             </div>
-
+            <a href="/" class="header__mob-logo"><img src="assets/img/header/logo.png" alt="Logo" title="Logo"></a>
+            <div class="header__mob-right">
+                    <a href="#!" class="search"></a>
+                <a href="#!" class="basket"></a>
+            </div>
             <div class="burger-menu" id="burger-menu">
+                <div class="burger-wrapper">
                 <div class="burger-menu__top">
                     <a href="#">В закладках: 0</a>
                     <a href="#">В сравнении: 0</a>
                 </div>
+                <div class="li li-first"><a href="#">Контактная информация</a></div>
+                <div class="li"><a href="#">Контактная информация</a></div>
+                <div class="li"><a href="#">Контактная информация</a></div>
+                <div class="li li-open"><a href="#">Контактная информация</a></div> 
+                <div class="li li-open"><a href="#">Контактная информация</a></div>
+                <div class="li"><a href="#">Контактная информация</a></div>
+                <div class="li"><a href="#">Контактная информация</a></div>
+                <div class="li"><a href="#">Контактная информация</a></div> 
+                <section class="contacts">
+                    <div class="li li-bold">Контакты</div>
+                    
+                    <div class="li">
+                        <span class="contacts__phone">
+                                <a href="tel:+78123477877">+7 812 347 7877</a>
+                                СПБ
+                        </span>
+                    </div>
+                    <div class="li">
+                        <span class="contacts__phone contacts__mail">
+                                <a href="mailto:sales@proteplo-spb.ru">sales@proteplo-spb.ru</a>
+                        </span>
+                    </div>
+                
+                        <div class="li">
+                            <span class="contacts__phone">
+                                    <a href="tel:+78123477877">+7 812 347 7877</a>
+                                    Бесплатно
+                            </span>
+                        </div>
+                        <div class="li li-adress">
+                            <span class="contacts__adress">
+                                <b>г.Санкт-Петербург, ул.Чугунная, д.14,</b>
+                                въезд с ул.Менделеевской д.5
+                        </span>
+                        <a href="#!" class="pop-button" rel="#map">Проложить маршут</a>
+                        </div>
+                            
+                        
+                    </section>    
+                </div>
+                <div class="burger-wrapper burger-wrapper_inner">
+                        <div class="li"><a href="#" class="li-back"><span>Назад</span></a></div>
+                        <div class="li li-first"><a href="#">Контактная информация</a></div>
+                        <div class="li li-open"><a href="#">Контактная информация</a></div> 
+                        <div class="li"><a href="#">Контактная информация</a></div>
+                        <div class="li"><a href="#">Контактная информация</a></div>
+                        <div class="li"><a href="#">Контактная информация</a></div>
+                </div>  
+                <div class="burger-wrapper burger-wrapper_inner">
+                        <div class="li"><a href="#" class="li-back"><span>Назад</span></a></div>
+                        <div class="li li-first"><a href="#">Контактная информация</a></div>
+                        <div class="li"><a href="#">Контактная информация</a></div> 
+                        <div class="li"><a href="#">Контактная информация</a></div>
+                        <div class="li"><a href="#">Контактная информация</a></div>
+                        <div class="li"><a href="#">Контактная информация</a></div>
+                </div>   
             </div>
     </div>
-    <div class="header__mob-title">
-        <a href="/" class="">Интернет-магазин отопления и водоснабжения</a>
-    </div>
+    
     <nav class="nav section">
     <ul class="nav__wrapper section__wrapper">
         <li><a href="#!">Оплата</a></li>
@@ -88,7 +153,7 @@
 
             <div class="header-middle__callback">
                 <ul>
-                    <li><a href="#" onclick="return ILex_OpenDialog("#callback-form")">Перезвоните мне</a></li>
+                    <li><a href="#" class="pop-button" rel="#phone">Перезвоните мне</a></li>
                     <li><a href="mailto:sales@proteplo-spb.ru"><span>sales@proteplo-spb.ru</span></a></li>
                 </ul>
             </div>
@@ -105,87 +170,858 @@
         <div class="header-bottom__wrapper section__wrapper">
             <ul class="header-bottom__wrapper-inner">
                 <li class="header-bottom__menu-item">
-                    <a href="#!">Отопление</a>
-                    <ul class="header-bottom__menu-drop">
-                        <div class="header-bottom__menu-col">
-                            <ul class="header-bottom__menu-cell">
-                                <li class="header-bottom__menu-title">
-                                    <a href="#">Котлы</a>
-                                </li>
-                                <li>
-                                    <a href="#">Газовые котлы</a>
-                                    <span>1334</span>
-                                </li>
-                                <li>
-                                    <a href="#">Газовые котлы</a>
-                                    <span>1334</span>
-                                </li>
-                                <li>
-                                    <a href="#">Газовые котлы</a>
-                                    <span>1334</span>
-                                </li>
-                                <li>
-                                    <a href="#">Газовые котлы</a>
-                                    <span>1334</span>
-                                </li>
-                                <li>
-                                    <a href="#">Газовые котлы</a>
-                                    <span>1334</span>
-                                </li>
-                                <li>
-                                    <hr>
-                                </li>
-
-                            </ul>
-
-                        </div>
-                        
-                        <div class="header-bottom__menu-col">
-                            
+                    <a href="#!" class="a">Отопление <span class="span"></span></a>
+                    
+                        <div class="header-bottom__menu-drop">
+                            <div class="header-bottom__menu-col">
+                                <ul class="header-bottom__menu-cell">
+                                    <li class="header-bottom__menu-title">
+                                        <a href="#"> Котлы</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Стабилизаторы напряжения</a>
+                                        <span>1334</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Газовые котлы</a>
+                                        <span>1334</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Газовые котлы</a>
+                                        <span>1334</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Газовые котлы</a>
+                                        <span>1334</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Газовые котлы</a>
+                                        <span>1334</span>
+                                    </li>
+    
+                                </ul>
+    
                             </div>
-                            
-                        <div class="header-bottom__menu-col">
-                            
+                            <div class="header-bottom__menu-col">
+                                <ul class="header-bottom__menu-cell">
+                                    <li class="header-bottom__menu-title">
+                                        <a href="#"> Котлы</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Стабилизаторы напряжения</a>
+                                        <span>1334</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Газовые котлы</a>
+                                        <span>1334</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link"> Газовые котлы</a>
+                                        <span>1334</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Газовые котлы</a>
+                                        <span>1334</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Газовые котлы</a>
+                                        <span>1334</span>
+                                    </li>
+    
+                                </ul>
+    
                             </div>
-                        <div class="header-bottom__menu-col">
-                            
+                            <div class="header-bottom__menu-col">
+                                <ul class="header-bottom__menu-cell">
+                                    <li class="header-bottom__menu-title">
+                                        <a href="#"> Котлы</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Стабилизаторы напряжения</a>
+                                        <span>1334</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Газовые котлы</a>
+                                        <span>1334</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Газовые котлы</a>
+                                        <span>1334</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Газовые котлы</a>
+                                        <span>1334</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Газовые котлы</a>
+                                        <span >1334 </span>
+                                    </li>
+                                    <li class="hr">
+                                        <hr>
+                                    </li>
+    
+                                </ul>
+
+                                <ul class="header-bottom__menu-cell">
+                                    <li class="header-bottom__menu-title">
+                                        <a href="#"> Котлы</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Стабилизаторы напряжения</a>
+                                        <span>1334</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Газовые котлы</a>
+                                        <span>1334</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Газовые котлы</a>
+                                        <span>1334</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Газовые котлы</a>
+                                        <span>1334</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Газовые котлы</a>
+                                        <span>1334</span>
+                                    </li>
+    
+                                </ul>
+    
+                            </div>
+                            <div class="header-bottom__menu-col">
+                                <ul class="header-bottom__menu-cell">
+                                   
+            <div class="product product_item">
+                <div class="product__blank">
+                <div class="product__blank-hit">Хит продаж</div>
+                <div class="product__blank-sale">Скидка -14%</div>
+                </div>
+
+                <a href="#!" class="product__star product__star_s4">
+                </a>
+                
+                <a href="#" class="product__img">
+                    <img src="assets/img/product/1.jpg" alt="product 1">
+                </a>
+                <div class="product__part">
+                <a href="#" class="product__name">Газовый настенный котел Buderus Logamax U072 24K</a>
+                <div class="product__vendor">
+                        <span>Арт: <B>991</B></span>
+                    </div>
+                <div class="product__space">
+                    
+                <div class="product__price">
+                    <span class="product__price-label">Цена: <span class="product__price-old">33 418 руб.</span></span>
+                    <div class="product__price-new">31 000 руб.</div>
+                    <div class="product__stock">
+                        <span class="product__stock_canceld">Снято</span>
+                    </div>                
+                </div>
+                <div class="product__buttons">
+                    <div class="product__buttons-row">
+                        <button class="button button_product"><span>Купить</span></button>
+                        <div class="product__button product__button-compare prompt" title="Добавить в закладки"></div>
+                        <div class="product__button product__button-hint prompt" title="Добавить к сравнению"></div>
+                    </div>
+                    <div class="product__buttons-row"> 
+                        <input type="text" class="input__text input__text_product mask2" placeholder="8 (xxx) xxx xx xx"> 
+                        <button class="button button_product button_product-input"><span>В 1 клик</span></button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+                                </ul>
+                            </div>
                         </div>
+                </li>
+                <li class="header-bottom__menu-item">
+                    <a href="#!"class="a">Водоснабжение <span class="span"></span></a>
+                        <div class="header-bottom__menu-drop">
+                            <div class="header-bottom__menu-col">
+                                <ul class="header-bottom__menu-cell">
+                                    <li class="header-bottom__menu-title">
+                                        <a href="#"> Котлы</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Стабилизаторы напряжения</a>
+                                        <span>1334</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Газовые котлы</a>
+                                        <span>1334</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Газовые котлы</a>
+                                        <span>1334</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Газовые котлы</a>
+                                        <span>1334</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Газовые котлы</a>
+                                        <span>1334</span>
+                                    </li>
+    
+                                </ul>
+    
+                            </div>
+                          
+                            <div class="header-bottom__menu-col">
+                                <ul class="header-bottom__menu-cell">
+                                    <li class="header-bottom__menu-title">
+                                        <a href="#"> Котлы</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Стабилизаторы напряжения</a>
+                                        <span>1334</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Газовые котлы</a>
+                                        <span>1334</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Газовые котлы</a>
+                                        <span>1334</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Газовые котлы</a>
+                                        <span>1334</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Газовые котлы</a>
+                                        <span >1334 </span>
+                                    </li>
+                                    <li class="hr">
+                                        <hr>
+                                    </li>
+    
+                                </ul>
 
+                                <ul class="header-bottom__menu-cell">
+                                    <li class="header-bottom__menu-title">
+                                        <a href="#"> Котлы</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Стабилизаторы напряжения</a>
+                                        <span>1334</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Газовые котлы</a>
+                                        <span>1334</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Газовые котлы</a>
+                                        <span>1334</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Газовые котлы</a>
+                                        <span>1334</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link">Газовые котлы</a>
+                                        <span>1334</span>
+                                    </li>
+    
+                                </ul>
+    
+                            </div>
+                            <div class="header-bottom__menu-col">
+                                <ul class="header-bottom__menu-cell">
+                                   
+            <div class="product product_item">
+                <div class="product__blank">
+                <div class="product__blank-hit">Хит продаж</div>
+                <div class="product__blank-sale">Скидка -14%</div>
+                </div>
 
-                    </ul>
+                <a href="#!" class="product__star product__star_s4">
+                </a>
+                
+                <a href="#" class="product__img">
+                    <img src="assets/img/product/1.jpg" alt="product 1">
+                </a>
+                <div class="product__part">
+                <a href="#" class="product__name">Газовый настенный котел Buderus Logamax U072 24K</a>
+                <div class="product__vendor">
+                        <span>Арт: <B>991</B></span>
+                    </div>
+                <div class="product__space">
+                    
+                <div class="product__price">
+                    <span class="product__price-label">Цена: <span class="product__price-old">33 418 руб.</span></span>
+                    <div class="product__price-new">31 000 руб.</div>
+                    <div class="product__stock">
+                        <span class="product__stock_canceld">Снято</span>
+                    </div>                
+                </div>
+                <div class="product__buttons">
+                    <div class="product__buttons-row">
+                        <button class="button button_product"><span>Купить</span></button>
+                        <div class="product__button product__button-compare prompt" title="Добавить в закладки"></div>
+                        <div class="product__button product__button-hint prompt" title="Добавить к сравнению"></div>
+                    </div>
+                    <div class="product__buttons-row"> 
+                        <input type="text" class="input__text input__text_product mask2" placeholder="8 (xxx) xxx xx xx"> 
+                        <button class="button button_product button_product-input"><span>В 1 клик</span></button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+                                </ul>
+                            </div>
+                        </div>
                 </li>
                 <li class="header-bottom__menu-item">
-                        <a href="#!">Водоснабжение</a>
-                        <ul class="header-bottom__menu-drop">
-                            
-                        </ul>
+                        <a href="#!"class="a">Канализация <span class="span"></span></a>
+                            <div class="header-bottom__menu-drop">
+                                <div class="header-bottom__menu-col">
+                                    <ul class="header-bottom__menu-cell">
+                                        <li class="header-bottom__menu-title">
+                                            <a href="#"> Котлы</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Стабилизаторы напряжения</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+        
+                                    </ul>
+        
+                                </div>
+                                <div class="header-bottom__menu-col">
+                                    <ul class="header-bottom__menu-cell">
+                                        <li class="header-bottom__menu-title">
+                                            <a href="#"> Котлы</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Стабилизаторы напряжения</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link"> Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+        
+                                    </ul>
+        
+                                </div>
+                               
+                                <div class="header-bottom__menu-col">
+                                    <ul class="header-bottom__menu-cell">
+                                       
+            <div class="product product_item">
+                <div class="product__blank">
+                <div class="product__blank-hit">Хит продаж</div>
+                <div class="product__blank-sale">Скидка -14%</div>
+                </div>
+
+                <a href="#!" class="product__star product__star_s4">
+                </a>
+                
+                <a href="#" class="product__img">
+                    <img src="assets/img/product/1.jpg" alt="product 1">
+                </a>
+                <div class="product__part">
+                <a href="#" class="product__name">Газовый настенный котел Buderus Logamax U072 24K</a>
+                <div class="product__vendor">
+                        <span>Арт: <B>991</B></span>
+                    </div>
+                <div class="product__space">
+                    
+                <div class="product__price">
+                    <span class="product__price-label">Цена: <span class="product__price-old">33 418 руб.</span></span>
+                    <div class="product__price-new">31 000 руб.</div>
+                    <div class="product__stock">
+                        <span class="product__stock_canceld">Снято</span>
+                    </div>                
+                </div>
+                <div class="product__buttons">
+                    <div class="product__buttons-row">
+                        <button class="button button_product"><span>Купить</span></button>
+                        <div class="product__button product__button-compare prompt" title="Добавить в закладки"></div>
+                        <div class="product__button product__button-hint prompt" title="Добавить к сравнению"></div>
+                    </div>
+                    <div class="product__buttons-row"> 
+                        <input type="text" class="input__text input__text_product mask2" placeholder="8 (xxx) xxx xx xx"> 
+                        <button class="button button_product button_product-input"><span>В 1 клик</span></button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+                                    </ul>
+                                </div>
+                            </div>
                 </li>
                 <li class="header-bottom__menu-item">
-                        <a href="#!">Канализация</a>
-                        <ul class="header-bottom__menu-drop">
-                            
-                        </ul>
+                        <a href="#!"class="a">Кондиционирование <span class="span"></span></a>
+                            <div class="header-bottom__menu-drop">
+                                <div class="header-bottom__menu-col">
+                                    <ul class="header-bottom__menu-cell">
+                                        <li class="header-bottom__menu-title">
+                                            <a href="#"> Котлы</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Стабилизаторы напряжения</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+        
+                                    </ul>
+        
+                                </div>
+                                <div class="header-bottom__menu-col">
+                                    <ul class="header-bottom__menu-cell">
+                                        <li class="header-bottom__menu-title">
+                                            <a href="#"> Котлы</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Стабилизаторы напряжения</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link"> Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+        
+                                    </ul>
+        
+                                </div>
+                                <div class="header-bottom__menu-col">
+                                    <ul class="header-bottom__menu-cell">
+                                        <li class="header-bottom__menu-title">
+                                            <a href="#"> Котлы</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Стабилизаторы напряжения</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span >1334 </span>
+                                        </li>
+                                        <li class="hr">
+                                            <hr>
+                                        </li>
+        
+                                    </ul>
+    
+                                    <ul class="header-bottom__menu-cell">
+                                        <li class="header-bottom__menu-title">
+                                            <a href="#"> Котлы</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Стабилизаторы напряжения</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+        
+                                    </ul>
+        
+                                </div>
+                                <div class="header-bottom__menu-col">
+                                    <ul class="header-bottom__menu-cell">
+                                       
+            <div class="product product_item">
+                <div class="product__blank">
+                <div class="product__blank-hit">Хит продаж</div>
+                <div class="product__blank-sale">Скидка -14%</div>
+                </div>
+
+                <a href="#!" class="product__star product__star_s4">
+                </a>
+                
+                <a href="#" class="product__img">
+                    <img src="assets/img/product/1.jpg" alt="product 1">
+                </a>
+                <div class="product__part">
+                <a href="#" class="product__name">Газовый настенный котел Buderus Logamax U072 24K</a>
+                <div class="product__vendor">
+                        <span>Арт: <B>991</B></span>
+                    </div>
+                <div class="product__space">
+                    
+                <div class="product__price">
+                    <span class="product__price-label">Цена: <span class="product__price-old">33 418 руб.</span></span>
+                    <div class="product__price-new">31 000 руб.</div>
+                    <div class="product__stock">
+                        <span class="product__stock_canceld">Снято</span>
+                    </div>                
+                </div>
+                <div class="product__buttons">
+                    <div class="product__buttons-row">
+                        <button class="button button_product"><span>Купить</span></button>
+                        <div class="product__button product__button-compare prompt" title="Добавить в закладки"></div>
+                        <div class="product__button product__button-hint prompt" title="Добавить к сравнению"></div>
+                    </div>
+                    <div class="product__buttons-row"> 
+                        <input type="text" class="input__text input__text_product mask2" placeholder="8 (xxx) xxx xx xx"> 
+                        <button class="button button_product button_product-input"><span>В 1 клик</span></button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+                                    </ul>
+                                </div>
+                            </div>
+                
                 </li>
                 <li class="header-bottom__menu-item">
-                        <a href="#!">Кондиционирование</a>
-                        <ul class="header-bottom__menu-drop">
-                            
-                        </ul>
+                        <a href="#!"class="a">Сантехника <span class="span"></span></a>
+                            <div class="header-bottom__menu-drop">
+                                <div class="header-bottom__menu-col">
+                                    <ul class="header-bottom__menu-cell">
+                                        <li class="header-bottom__menu-title">
+                                            <a href="#"> Котлы</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Стабилизаторы напряжения</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+        
+                                    </ul>
+        
+                                </div>
+                                <div class="header-bottom__menu-col">
+                                    <ul class="header-bottom__menu-cell">
+                                        <li class="header-bottom__menu-title">
+                                            <a href="#"> Котлы</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Стабилизаторы напряжения</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link"> Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+        
+                                    </ul>
+        
+                                </div>
+                                <div class="header-bottom__menu-col">
+                                    
+    
+                                    <ul class="header-bottom__menu-cell">
+                                        <li class="header-bottom__menu-title">
+                                            <a href="#"> Котлы</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Стабилизаторы напряжения</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+        
+                                    </ul>
+        
+                                </div>
+                                <div class="header-bottom__menu-col">
+                                    <ul class="header-bottom__menu-cell">
+                                       
+            <div class="product product_item">
+                <div class="product__blank">
+                <div class="product__blank-hit">Хит продаж</div>
+                <div class="product__blank-sale">Скидка -14%</div>
+                </div>
+
+                <a href="#!" class="product__star product__star_s4">
+                </a>
+                
+                <a href="#" class="product__img">
+                    <img src="assets/img/product/1.jpg" alt="product 1">
+                </a>
+                <div class="product__part">
+                <a href="#" class="product__name">Газовый настенный котел Buderus Logamax U072 24K</a>
+                <div class="product__vendor">
+                        <span>Арт: <B>991</B></span>
+                    </div>
+                <div class="product__space">
+                    
+                <div class="product__price">
+                    <span class="product__price-label">Цена: <span class="product__price-old">33 418 руб.</span></span>
+                    <div class="product__price-new">31 000 руб.</div>
+                    <div class="product__stock">
+                        <span class="product__stock_canceld">Снято</span>
+                    </div>                
+                </div>
+                <div class="product__buttons">
+                    <div class="product__buttons-row">
+                        <button class="button button_product"><span>Купить</span></button>
+                        <div class="product__button product__button-compare prompt" title="Добавить в закладки"></div>
+                        <div class="product__button product__button-hint prompt" title="Добавить к сравнению"></div>
+                    </div>
+                    <div class="product__buttons-row"> 
+                        <input type="text" class="input__text input__text_product mask2" placeholder="8 (xxx) xxx xx xx"> 
+                        <button class="button button_product button_product-input"><span>В 1 клик</span></button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+                                    </ul>
+                                </div>
+                            </div>
                 </li>
                 <li class="header-bottom__menu-item">
-                        <a href="#!">Сантехника</a>
-                        <ul class="header-bottom__menu-drop">
-                            
-                        </ul>
+                        <a href="#!"class="a">Энергоснабжение <span class="span"></span></a>
+                            <div class="header-bottom__menu-drop">
+                                <div class="header-bottom__menu-col">
+                                    <ul class="header-bottom__menu-cell">
+                                        <li class="header-bottom__menu-title">
+                                            <a href="#"> Котлы</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Стабилизаторы напряжения</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+        
+                                    </ul>
+        
+                                </div>
+                                <div class="header-bottom__menu-col">
+                                    <ul class="header-bottom__menu-cell">
+                                        <li class="header-bottom__menu-title">
+                                            <a href="#"> Котлы</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Стабилизаторы напряжения</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link"> Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+        
+                                    </ul>
+        
+                                </div>
+                                <div class="header-bottom__menu-col">
+                                    <ul class="header-bottom__menu-cell">
+                                        <li class="header-bottom__menu-title">
+                                            <a href="#"> Котлы</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Стабилизаторы напряжения</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span >1334 </span>
+                                        </li>
+                                        <li class="hr">
+                                            <hr>
+                                        </li>
+        
+                                    </ul>
+    
+                                    <ul class="header-bottom__menu-cell">
+                                        <li class="header-bottom__menu-title">
+                                            <a href="#"> Котлы</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Стабилизаторы напряжения</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link">Газовые котлы</a>
+                                            <span>1334</span>
+                                        </li>
+        
+                                    </ul>
+        
+                                </div>
+                                
+                            </div>
                 </li>
                 <li class="header-bottom__menu-item">
-                        <a href="#!">Энергоснабжение</a>
-                        <ul class="header-bottom__menu-drop">
-                            
-                        </ul>
-                </li>
-                <li>
-                        <a href="#!">Услуги</a>
+                        <a href="#!" class="a">Услуги</a>
                 </li>
 
             </ul>
@@ -206,6 +1042,9 @@
 <!-- Хлебные крошки конец -->
 <section class="item section">
     <div class="item__wrapper section__wrapper">
+        <div class="item-header-mob">
+            <span>Вернуться к покупкам</span>
+        </div>
         <h1 class="section__title">Туалетная кабина Биоэкология ЭкоЛайт Гарден</h1>
         <!-- Верхняя информация товара [&__top] -->
         <div class="item__top">
@@ -231,100 +1070,298 @@
         <div class="item__container">
             <!-- Основная информация товара [&__body] -->
             <div class="item__body">
-                <div class="item__slider">
-                    <div class="item__image">
-                        <a href="#" rel="prettyPhoto"><img src="assets/img/item/pic1.png" alt=""></a>
-                    </div>
-                    <div class="item__thumbs">
-			            <div class="owl-carousel owl-items">
-                            <div class="item__thumb"><img src="assets/img/item/pic1.png" alt=""></div>
-                            <div class="item__thumb"><img src="assets/img/item/pic2.png" alt=""></div>
-                            <div class="item__thumb"><img src="assets/img/item/pic3.png" alt=""></div>
-                            <div class="item__thumb"><img src="assets/img/item/pic4.png" alt=""></div>
-                            <div class="item__thumb"><img src="assets/img/item/pic1.png" alt=""></div>
-                            <div class="item__thumb"><img src="assets/img/item/pic2.png" alt=""></div>
-                            <div class="item__thumb"><img src="assets/img/item/pic3.png" alt=""></div>
-                            <div class="item__thumb"><img src="assets/img/item/pic4.png" alt=""></div>
+                <div class="item__row">
+                    <div class="item__slider">
+                            <fieldset class="rating">
+                                    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                                    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                                    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                                    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                                    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                                    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                            </fieldset>
+                        <div class="item__image">
+                                <a class="fancy" href="assets/img/item/pic1.png"><img src="assets/img/item/pic1.png" alt=""></a>
+                        </div>
+                        <div class="item__thumbs">
+                            <div class="owl-carousel owl-items">
+                                <div class="item__thumb">
+                                    <a class="fancy" href="assets/img/item/pic1.png"><img src="assets/img/item/pic1.png" alt=""></a></div>
+                                <div class="item__thumb">
+                                    <a class="fancy" href="assets/img/item/pic2.png"><img src="assets/img/item/pic2.png" alt=""></a></div>
+                                <div class="item__thumb">
+                                    <a class="fancy" href="assets/img/item/pic3.png"><img src="assets/img/item/pic3.png" alt=""></a></div>
+                                <div class="item__thumb">
+                                    <a class="fancy" href="assets/img/item/pic4.png"><img src="assets/img/item/pic4.png" alt=""></a></div>
+                                 <div class="item__thumb">
+                                    <a class="" href="assets/img/item/pic1.png"><img src="assets/img/item/pic1.png" alt=""></a></div>
+                                <div class="item__thumb">
+                                    <a class="fancy" href="assets/img/item/pic2.png"><img src="assets/img/item/pic2.png" alt=""></a></div>
+                                <div class="item__thumb">
+                                    <a class="fancy" href="assets/img/item/pic3.png"><img src="assets/img/item/pic3.png" alt=""></a></div>
+                                <div class="item__thumb">
+                                    <a class="fancy" href="assets/img/item/pic4.png"><img src="assets/img/item/pic4.png" alt=""></a></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="item__info">
-                    <div class="item__board">
-                        <div class="item__board-price">
-                            <div class="item__board-text">
-                                <span class="item__board-old">19 250 руб.</span>
-                                <span class="item__board-new"><b>15 380 </b><span>руб.</span> цена</span>
-                                <div class="item__board-sale">-20%</div>
-                            </div>
-                            <div class="item__board-service">
-                                <a href="#!"><img src="assets/img/item/service.png" alt=""></a>
-                                <span>Даём скидку на <a href="#!">монтаж</a> приобретённого оборудования</span>
+                    <div class="item__info">
+                        <div class="item__board">
+                            <div class="item__board-price">
+                                <div class="item__board-text">
+                                    <span class="item__board-old">19 250 руб.</span>
+                                    <span class="item__board-new"><b>15 380 </b><span>руб.</span> цена</span>
+                                    <div class="item__board-sale">-20%</div>
+                                </div>
+                                <div class="item__board-service">
+                                    <a href="#!"><img src="assets/img/item/service.png" alt=""></a>
+                                    <span>Даём скидку на <a href="#!">монтаж</a> приобретённого оборудования</span>
+                                    
+                                </div>
+
                                 
                             </div>
+                            <div class="product__buttons-row">
+                                    <button class="button button_product"><span>Купить</span></button>
+                                    <div class="product__button product__button-compare prompt" title="Добавить в закладки"></div>
+                                    <div class="product__button product__button-hint prompt" title="Добавить к сравнению"></div>
+                                </div>
+                            
+                                <div class="item__board-link">
+                                    <a href="#">В кредит за 1 045 руб./мес.</a>
+                                </div>
+                        </div>
+                        <div class="support__callback">
+                                <span class="support__caption"><b>Заказать в 1 клик</b> <br>Или мы перезвоним вам</span>
+                                <div class="support__input">
+                                    <input type="text" class="input__text mask" placeholder="+7 (ХХХ) ХХХ ХХ ХХ">
+                                    <button class="button"><span>
+                                        Заказать звонок</span></button>
+                                </div>
+                                <label class="input__checkbox">Я согласен с <a href="/about/konfidentsialnost/">политикой конфиденциальности</a>
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                            </label>
+                            </div>
+                            <div class="item__char">
+                                    <div class="item__char-line">
+                                        <span>Тип розжига</span>
+                                        <p>Пьезорозжиг</p>
+                                    </div>
+                                    <div class="item__char-line">
+                                        <span>Тип розжига</span>
+                                        <p>Пьезорозжиг</p>
+                                    </div>
+                                    <div class="item__char-line">
+                                        <span>Тип розжига</span>
+                                        <p>Пьезорозжиг</p>
+                                    </div>
+                                    <div class="item__char-line">
+                                        <span>Тип розжига</span>
+                                        <p>Пьезорозжиг</p>
+                                    </div>
+                                    <div class="item__char-line">
+                                        <span>Тип розжига</span>
+                                        <p>Пьезорозжиг</p>
+                                    </div>
+                                    <a href="#!" class="item__char-link">Все характеристики</a>
+                                </div>
+                    </div>
+                </div>
+                <div class="tabs-mobile">
+                    <div class="tabs-mobile__button spoiler spoiler_active">Описание</div>
+                    <div class="tabs-mobile__body spoiler-body" style="display: block;">
+                            <div class="tabs__body">
+                                </p><p>В газовых колонках GWH 265 ERN NanoPlus теплообменник изготовлен из бескислородной меди высокого качества с применением технологии ОХУGEN FREE, которая максимально повышает его устойчивость к окислению и воздействию высоких температур в процессе эксплуатации и не требует нанесения каких-либо дополнительных защитных слоев.<br>
+                                </p><p>Теплообменник в газовых колонках NanoPlus не содержит свинец и олово, что говорит о его безопасности для здоровья человека и окружающей среды, а также о высокой надежности и долговечности.<br>
+                                </p><p><br>
+                                </p><p>На панели управления газовой колонки GWH 265 ERN NanoPlus расположен современный цифровой LCD-дисплей с интеллектуальным управлением. На дисплее отображается температура нагрева воды, а также различные функции работы колонки: индикация наличия пламени на горелке и наличие циркуляции воды в теплообменнике, индикация уровня заряда батареек для розжига. Если уровня заряда для розжига будет недостаточно, иконка батарейки будет мигать, что означает необходимость ее замены.<br>
+                                </p><p><br>
+                                </p><p>Многоуровневая система безопасности<br>
+                                </p><p><br>
+                                </p><p>Первый уровень системы безопасности — датчик тяги. Он срабатывает при отсутствии тяги в дымоходе или появлении обратной тяги, отключая подачу газа. Второй уровень системы безопасности — термостат, защищающий колонку от перегрева. Третий уровень безопасности — гидравлический предохранительный клапан, предназначенный для контроля циркуляции воды в теплообменнике. Это предохраняет газовую колонку от перегрева. Четвертый уровень — контроль ионизации пламени контролирует наличие или отсутствие пламени на горелке. Система интеллектуального управления контролирует работу всех датчиков. В случае возникновения каких-либо неисправностей или ошибок в работе колонки, на LCD-дисплее высвечивается код ошибки, что очень удобно при обслуживании и эксплуатации прибора.<br>
+                                </p><p><br>
+                                </p><p>Газовые колонки Electrolux сконструированы с учетом особенностей работы в России, Украине, Казахстане, Беларуси и в других странах постсоветского пространства, где давление газа и воды в магистралях иногда бывает достаточно низким. Минимальное давление воды на включение — 0,15 бар, газа — 13 мбар.<br>
+                                </p><p><br>
+                                </p><p>Преимущества газовой колонки Electrolux GWH 265 ERN NanoPlus:<br>
+                                </p><p>- Электронный розжиг<br>
+                                </p><p>- LCD-дисплей с индикацией температуры нагрева воды<br>
+                                </p><p>- Индикация температуры нагрева, наличия пламени на горелке, циркуляции воды, уровни заряда батареи<br>
+                                </p><p>- Горелка из нержавеющей стали<br>
+                                </p><p>- Теплообменник из бескислородной меди<br>
+                                </p><p>- Регулировка температуры и режима мощности нагрева<br>
+                                </p><p>- Многоуровневая система безопасности<br>
+                                </p><p>- Работа при низком давлении воды и газа<br>
+                                </p><p>- Малый расход газа<br>
+                                </p><p>- Низкий уровень шума<br>
+                                </p><p>- Универсальный диаметр дымохода</p>
+    
+                        </div>
+                    </div>
+                    <div class="tabs-mobile__button spoiler">Характеристики</div>
+                    <div class="tabs-mobile__body spoiler-body">
+                            <div class="tabs__body">
+                                    <h2 class="tabs__title">ELECTROLUX GWH 265 ERN NanoPlus водонагреватель газовый проточный : основные характеристики</h2>
+                                    <div class="table">
+                                        <div class="table__row">
+                                            <div class="table__col">Тип розжига</div>
+                                            <div class="table__col">Пьезорозжиг</div>
+                                        </div>
+            
+                                        <div class="table__row">
+                                                <div class="table__col">Тип розжига</div>
+                                                <div class="table__col">Пьезорозжиг</div>
+                                        </div>
+                                        <div class="table__row">
+                                            <div class="table__col">Тип розжига</div>
+                                            <div class="table__col">Пьезорозжиг</div>
+                                        </div>
+                                        <div class="table__row">
+                                            <div class="table__col">Тип розжига</div>
+                                            <div class="table__col">Пьезорозжиг</div>
+                                        </div>
+            
+                                        <div class="table__row">
+                                                <div class="table__col">Тип розжига</div>
+                                                <div class="table__col">Пьезорозжиг</div>
+                                        </div>
+                                        <div class="table__row">
+                                            <div class="table__col">Тип розжига</div>
+                                            <div class="table__col">Пьезорозжиг</div>
+                                        </div>
+                                        <div class="table__row">
+                                            <div class="table__col">Тип розжига</div>
+                                            <div class="table__col">Пьезорозжиг</div>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+                    <div class="tabs-mobile__button spoiler">Отзывы</div>
+                        <div class="tabs-mobile__body spoiler-body">
+                                <div class="tabs__body">
+                                        <span>На данный момент отзывов для данного товара нет, <a href="#!">оставьте свой отзыв.</a></span>
+                                    </div>
+                        </div>
+                    <div class="tabs-mobile__button spoiler">Документация</div>
+                    <div class="tabs-mobile__body spoiler-body">
+                            <div class="tabs__body">
+                                    <span>На данный момент отзывов для данного товара нет, <a href="#!">оставьте свой отзыв.</a></span>
+                                </div>
+                    </div>
+                </div>
+                <div class="tabs">
+                    <div class="tabs__controll">
+                        <div class="tabs__button tabs__button_active" rel="4">Описание</div>
+                        <div class="tabs__button"  rel="5">Характеристики</div>
+                        <div class="tabs__button "rel="6"> Отзывы</div>
+                    </div>
+                    <div class="tabs__body" style="display: block;">
+                            </p><p>В газовых колонках GWH 265 ERN NanoPlus теплообменник изготовлен из бескислородной меди высокого качества с применением технологии ОХУGEN FREE, которая максимально повышает его устойчивость к окислению и воздействию высоких температур в процессе эксплуатации и не требует нанесения каких-либо дополнительных защитных слоев.<br>
+                            </p><p>Теплообменник в газовых колонках NanoPlus не содержит свинец и олово, что говорит о его безопасности для здоровья человека и окружающей среды, а также о высокой надежности и долговечности.<br>
+                            </p><p><br>
+                            </p><p>На панели управления газовой колонки GWH 265 ERN NanoPlus расположен современный цифровой LCD-дисплей с интеллектуальным управлением. На дисплее отображается температура нагрева воды, а также различные функции работы колонки: индикация наличия пламени на горелке и наличие циркуляции воды в теплообменнике, индикация уровня заряда батареек для розжига. Если уровня заряда для розжига будет недостаточно, иконка батарейки будет мигать, что означает необходимость ее замены.<br>
+                            </p><p><br>
+                            </p><p>Многоуровневая система безопасности<br>
+                            </p><p><br>
+                            </p><p>Первый уровень системы безопасности — датчик тяги. Он срабатывает при отсутствии тяги в дымоходе или появлении обратной тяги, отключая подачу газа. Второй уровень системы безопасности — термостат, защищающий колонку от перегрева. Третий уровень безопасности — гидравлический предохранительный клапан, предназначенный для контроля циркуляции воды в теплообменнике. Это предохраняет газовую колонку от перегрева. Четвертый уровень — контроль ионизации пламени контролирует наличие или отсутствие пламени на горелке. Система интеллектуального управления контролирует работу всех датчиков. В случае возникновения каких-либо неисправностей или ошибок в работе колонки, на LCD-дисплее высвечивается код ошибки, что очень удобно при обслуживании и эксплуатации прибора.<br>
+                            </p><p><br>
+                            </p><p>Газовые колонки Electrolux сконструированы с учетом особенностей работы в России, Украине, Казахстане, Беларуси и в других странах постсоветского пространства, где давление газа и воды в магистралях иногда бывает достаточно низким. Минимальное давление воды на включение — 0,15 бар, газа — 13 мбар.<br>
+                            </p><p><br>
+                            </p><p>Преимущества газовой колонки Electrolux GWH 265 ERN NanoPlus:<br>
+                            </p><p>- Электронный розжиг<br>
+                            </p><p>- LCD-дисплей с индикацией температуры нагрева воды<br>
+                            </p><p>- Индикация температуры нагрева, наличия пламени на горелке, циркуляции воды, уровни заряда батареи<br>
+                            </p><p>- Горелка из нержавеющей стали<br>
+                            </p><p>- Теплообменник из бескислородной меди<br>
+                            </p><p>- Регулировка температуры и режима мощности нагрева<br>
+                            </p><p>- Многоуровневая система безопасности<br>
+                            </p><p>- Работа при низком давлении воды и газа<br>
+                            </p><p>- Малый расход газа<br>
+                            </p><p>- Низкий уровень шума<br>
+                            </p><p>- Универсальный диаметр дымохода</p>
+
+                    </div>
+                    <div class="tabs__body">
+                        <h2 class="tabs__title">ELECTROLUX GWH 265 ERN NanoPlus водонагреватель газовый проточный : основные характеристики</h2>
+                        <div class="table">
+                            <div class="table__row">
+                                <div class="table__col">Тип розжига</div>
+                                <div class="table__col">Пьезорозжиг</div>
+                            </div>
+
+                            <div class="table__row">
+                                    <div class="table__col">Тип розжига</div>
+                                    <div class="table__col">Пьезорозжиг</div>
+                            </div>
+                            <div class="table__row">
+                                <div class="table__col">Тип розжига</div>
+                                <div class="table__col">Пьезорозжиг</div>
+                            </div>
+                            <div class="table__row">
+                                <div class="table__col">Тип розжига</div>
+                                <div class="table__col">Пьезорозжиг</div>
+                            </div>
+
+                            <div class="table__row">
+                                    <div class="table__col">Тип розжига</div>
+                                    <div class="table__col">Пьезорозжиг</div>
+                            </div>
+                            <div class="table__row">
+                                <div class="table__col">Тип розжига</div>
+                                <div class="table__col">Пьезорозжиг</div>
+                            </div>
+                            <div class="table__row">
+                                <div class="table__col">Тип розжига</div>
+                                <div class="table__col">Пьезорозжиг</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__body">
+                        <span>На данный момент отзывов для данного товара нет, <a href="#!">оставьте свой отзыв.</a></span>
+                    </div>
+                </div>
+                
+                <div class="horizont">
+                    <div class="horizont__img">
+                        <img src="assets/img/item/item.jpg" alt="">
+                    </div>
+                    <div class="horizont__col">
+                        <div class="horizont__row text">ELECTROLUX GWH 265 ERN NanoPlus водонагреватель газовый проточный</div>
+                        <div class="horizont__row"><a href="#">В кредит за 1 045 руб./мес.</a> </div>
+                        <div class="horizont__bottom">
+                            <div class="horizont__price">
+                                <span class="horizont__old">1 500 руб.</span>
+                                <span class="horizont__new">5 000 руб.</span>
+                            </div>
+                            <label class="input__checkbox">Монтаж</a>
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                        </label>
+                        <div class="product__buttons-row">
+                            <button class="button button_product"><span>Купить</span></button>
+                            <div class="product__button product__button-compare prompt" title="Добавить в закладки"></div>
+                            <div class="product__button product__button-hint prompt" title="Добавить к сравнению"></div>
+                        </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Основная страница товара конец -->
+                <div class="item__text">
 
-            <!-- Сайдбар [&__aside] -->
-            <div class="item__aside">
-                <div class="item__aside-block">
-                    <span class="item__aside-title">Доставка</span>
-                    <p>По Санкт-Петербургу</p>
-                    <ul>
-                        <li>Курьер - 300 руб</li>
-                        <li>Самовывоз - бесплатно Санкт-Петербург, ул. Чугунная, дом 14, лит. K 
-                                (въезд с Менделеевской 5)
-                            <br>
-                        <a href="#">Показать на карте</a></li>
-                    </ul>
-
-                    <p>По России</p>
-                    <ul>
-                        <li>Транспортные компании Подробности по телефонам:
-                                <br>8 (812) 347-78-77
-                                <br>8 (800) 775-63-03</li>
-                    </ul>
+			Изображения товара, цвет, размер, могут отличаться от реального внешнего вида товара. Производитель имеет право изменить конструкцию, технических характеристики, внешний вид, комплектацию товара без уведомления потребителя.
+		
                 </div>
-
-                <div class="item__aside-block">
-                        <span class="item__aside-title">Оплата</span>
-                        
-                        <ul>
-                            <li>Наличными при получении</li>
-                            <li>Банковским переводом</li>
-                            <li>Пластиковой картой</li>
-                            <li>Кредит</li>
-                        </ul>
-                </div>
-                <div class="item__aside-block">
-                        <img src="assets/img/item/img.png" alt="Img" class="item__aside-img">
-                        <a href="#" class="item__aside-link">На этой неделе для вас специальная скидка на товары компании Экопром! До 10% по промокоду "Маркет"</a>
-
-                        <form class="item__aside-form">
-                            <input type="text" class="input__text mask" placeholder="+7 (XXX) XXX XX XX">
-                            <button class="button"><span>Узнать свою скидку</span></button>
-                        </form>
-                </div>
-                <div class="item__aside-block">
-                        <a target="_blank" href="//clck.yandex.ru/redir/dtype=stred/pid=47/cid=2508/*//market.yandex.ru/shop/63983/reviews?from=63983&amp;ncrnd=4505&amp;sort_by=date"><img src="//clck.yandex.ru/redir/dtype=stred/pid=47/cid=2507/*//grade.market.yandex.ru/?id=63983&amp;action=image&amp;size=3" border="0" width="200" height="125" alt="Читайте отзывы покупателей и оценивайте качество магазина на Яндекс.Маркете"></a>
-                </div>
-            </div>
-            <!-- Сайдбар конец -->
-        </div>
-        
- 
-        <div class="item__recomends"></div>
-    </div>
-</section>
+               
+                <div class="item__recomends"></div>
 
        <!-- Блок "Похожие товары" -->
-       <section class="block section">
+       <section class="block section block_mob">
             <div class="block__wrapper section__wrapper">
                 <h3 class="block__title">Похожие товары</h3>
         
-                <div class="owl-carousel owl-theme">
+                <div class="owl-carousel owl-theme owl-main">
                         <div class="product product_item product_type2">
                                 <ul class="product__star">
                                     <li></li><li></li><li></li><li></li><li></li>
@@ -509,7 +1546,354 @@
        <!-- Блок "Похожие товары" Конец -->
 
        <!-- Блок "Рекомендованные товары" -->
-       <section class="block section">
+       <section class="block section block_mob">
+           <div class="block__wrapper section__wrapper">
+               <h3 class="block__title">Рекомендованные товары</h3>
+               <div class="block__row">
+                   
+            <div class="product product_item product_type2">
+                    <ul class="product__star">
+                        <li></li><li></li><li></li><li></li><li></li>
+                    </ul>
+                    <div class="product__vendor">
+                        <span>Арт:991</span>
+                    </div>
+                    <a href="#" class="product__img">
+                        <img src="assets/img/product/1.jpg" alt="product 1">
+                    </a>
+                    <a href="#" class="product__name">Газовый настенный котел Buderus Logamax U072 24K</a>
+                    <div class="product__price">
+                        <div class="product__price-new">31 000 руб.</div>             
+                    </div>
+                    <div class="product__buttons">
+                        <div class="product__buttons-row">
+                            <button class="button button_product"><span>Купить</span></button>
+                            <div class="product__button product__button-compare prompt" title="Добавить в закладки"></div>
+                            <div class="product__button product__button-hint prompt" title="Добавить к сравнению"></div>
+                        </div>
+                    </div>
+            </div>
+    
+            <div class="product product_item product_type2">
+                    <ul class="product__star">
+                        <li></li><li></li><li></li><li></li><li></li>
+                    </ul>
+                    <div class="product__vendor">
+                        <span>Арт:991</span>
+                    </div>
+                    <a href="#" class="product__img">
+                        <img src="assets/img/product/1.jpg" alt="product 1">
+                    </a>
+                    <a href="#" class="product__name">Газовый настенный котел Buderus Logamax U072 24K</a>
+                    <div class="product__price">
+                        <div class="product__price-new">31 000 руб.</div>             
+                    </div>
+                    <div class="product__buttons">
+                        <div class="product__buttons-row">
+                            <button class="button button_product"><span>Купить</span></button>
+                            <div class="product__button product__button-compare prompt" title="Добавить в закладки"></div>
+                            <div class="product__button product__button-hint prompt" title="Добавить к сравнению"></div>
+                        </div>
+                    </div>
+            </div>
+                             
+            <div class="product product_item product_type2">
+                    <ul class="product__star">
+                        <li></li><li></li><li></li><li></li><li></li>
+                    </ul>
+                    <div class="product__vendor">
+                        <span>Арт:991</span>
+                    </div>
+                    <a href="#" class="product__img">
+                        <img src="assets/img/product/1.jpg" alt="product 1">
+                    </a>
+                    <a href="#" class="product__name">Газовый настенный котел Buderus Logamax U072 24K</a>
+                    <div class="product__price">
+                        <div class="product__price-new">31 000 руб.</div>             
+                    </div>
+                    <div class="product__buttons">
+                        <div class="product__buttons-row">
+                            <button class="button button_product"><span>Купить</span></button>
+                            <div class="product__button product__button-compare prompt" title="Добавить в закладки"></div>
+                            <div class="product__button product__button-hint prompt" title="Добавить к сравнению"></div>
+                        </div>
+                    </div>
+            </div>
+            <div class="product product_item product_type2">
+                    <ul class="product__star">
+                        <li></li><li></li><li></li><li></li><li></li>
+                    </ul>
+                    <div class="product__vendor">
+                        <span>Арт:991</span>
+                    </div>
+                    <a href="#" class="product__img">
+                        <img src="assets/img/product/1.jpg" alt="product 1">
+                    </a>
+                    <a href="#" class="product__name">Газовый настенный котел Buderus Logamax U072 24K</a>
+                    <div class="product__price">
+                        <div class="product__price-new">31 000 руб.</div>             
+                    </div>
+                    <div class="product__buttons">
+                        <div class="product__buttons-row">
+                            <button class="button button_product"><span>Купить</span></button>
+                            <div class="product__button product__button-compare prompt" title="Добавить в закладки"></div>
+                            <div class="product__button product__button-hint prompt" title="Добавить к сравнению"></div>
+                        </div>
+                    </div>
+            </div>
+            
+            
+               </div>
+           </div>
+       </section>
+       <!-- Блок "Рекомендованные товары" Конец -->
+
+            </div>
+            
+            <!-- Основная страница товара конец -->
+
+            <!-- Сайдбар [&__aside] -->
+            <div class="item__aside">
+                <div class="item__aside-block">
+                    <span class="item__aside-title">Доставка</span>
+                    <p>По Санкт-Петербургу</p>
+                    <ul>
+                        <li>Курьер - 300 руб</li>
+                        <li>Самовывоз - бесплатно Санкт-Петербург, ул. Чугунная, дом 14, лит. K 
+                                (въезд с Менделеевской 5)
+                            <br>
+                        <a href="#">Посмотреть на карте</a></li>
+                    </ul>
+
+                    <p>По России</p>
+                    <ul>
+                        <li>Транспортные компании Подробности по телефонам:
+                                <br>8 (812) 347-78-77
+                                <br>8 (800) 775-63-03</li>
+                    </ul>
+                </div>
+
+                <div class="item__aside-block">
+                        <span class="item__aside-title">Оплата</span>
+                        
+                        <ul>
+                            <li>Наличными при получении</li>
+                            <li>Банковским переводом</li>
+                            <li>Пластиковой картой</li>
+                            <li>Кредит</li>
+                        </ul>
+                </div>
+                <div class="item__aside-block">
+                        <img src="assets/img/item/img.png" alt="Img" class="item__aside-img">
+                        <a href="#" class="item__aside-link">На этой неделе для вас специальная скидка на товары компании Экопром! До 10% по промокоду "Маркет"</a>
+
+                        <form class="item__aside-form">
+                            <input type="text" class="input__text mask" placeholder="+7 (XXX) XXX XX XX">
+                            <button class="button"><span>Узнать свою скидку</span></button>
+                        </form>
+                </div>
+                <div class="item__aside-block">
+                        <a target="_blank" href="https://clck.yandex.ru/redir/dtype=stred/pid=47/cid=2508/*//market.yandex.ru/shop/63983/reviews?from=63983&amp;ncrnd=4505&amp;sort_by=date"><img src="https://clck.yandex.ru/redir/dtype=stred/pid=47/cid=2507/*//grade.market.yandex.ru/?id=63983&amp;action=image&amp;size=3" border="0" width="200" height="125" alt="Читайте отзывы покупателей и оценивайте качество магазина на Яндекс.Маркете"></a>
+                </div>
+            </div>
+            <!-- Сайдбар конец -->
+        </div>
+        </div>
+ 
+        
+</section>
+
+       <!-- Блок "Похожие товары" -->
+       <section class="block section block_desc">
+            <div class="block__wrapper section__wrapper">
+                <h3 class="block__title">Похожие товары</h3>
+        
+                <div class="owl-carousel owl-theme owl-main">
+                        <div class="product product_item product_type2">
+                                <ul class="product__star">
+                                    <li></li><li></li><li></li><li></li><li></li>
+                                </ul>
+                                <div class="product__vendor">
+                                    <span>Арт:991</span>
+                                </div>
+                                <a href="#" class="product__img">
+                                    <img src="assets/img/product/1.jpg" alt="product 1">
+                                </a>
+                                <a href="#" class="product__name">Газовый настенный котел Buderus Logamax U072 24K</a>
+                                <div class="product__price">
+                                    <div class="product__price-new">31 000 руб.</div>             
+                                </div>
+                                <div class="product__buttons">
+                                    <div class="product__buttons-row">
+                                        <button class="button button_product"><span>Купить</span></button>
+                                        <div class="product__button product__button-compare prompt" title="Добавить в закладки"></div>
+                                        <div class="product__button product__button-hint prompt" title="Добавить к сравнению"></div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="product product_item product_type2">
+                                <ul class="product__star">
+                                    <li></li><li></li><li></li><li></li><li></li>
+                                </ul>
+                                <div class="product__vendor">
+                                    <span>Арт:991</span>
+                                </div>
+                                <a href="#" class="product__img" >
+                                    <img src="assets/img/product/1.jpg" alt="product 1">
+                                </a>
+                                <a href="#" class="product__name">Газовый настенный котел Buderus Logamax U072 24K</a>
+                                <div class="product__price">
+                                    <div class="product__price-new">31 000 руб.</div>             
+                                </div>
+                                <div class="product__buttons">
+                                    <div class="product__buttons-row">
+                                        <button class="button button_product"><span>Купить</span></button>
+                                        <div class="product__button product__button-compare prompt" title="Добавить в закладки"></div>
+                                        <div class="product__button product__button-hint prompt" title="Добавить к сравнению"></div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="product product_item product_type2">
+                                <ul class="product__star">
+                                    <li></li><li></li><li></li><li></li><li></li>
+                                </ul>
+                                <div class="product__vendor">
+                                    <span>Арт:991</span>
+                                </div>
+                                <a href="#" class="product__img">
+                                    <img src="assets/img/product/1.jpg" alt="product 1">
+                                </a>
+                                <a href="#" class="product__name">Газовый настенный котел Buderus Logamax U072 24K</a>
+                                <div class="product__price">
+                                    <div class="product__price-new">31 000 руб.</div>             
+                                </div>
+                                <div class="product__buttons">
+                                    <div class="product__buttons-row">
+                                        <button class="button button_product"><span>Купить</span></button>
+                                        <div class="product__button product__button-compare prompt" title="Добавить в закладки"></div>
+                                        <div class="product__button product__button-hint prompt" title="Добавить к сравнению"></div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="product product_item product_type2">
+                                <ul class="product__star">
+                                    <li></li><li></li><li></li><li></li><li></li>
+                                </ul>
+                                <div class="product__vendor">
+                                    <span>Арт:991</span>
+                                </div>
+                                <a href="#" class="product__img">
+                                    <img src="assets/img/product/1.jpg" alt="product 1">
+                                </a>
+                                <a href="#" class="product__name">Газовый настенный котел Buderus Logamax U072 24K</a>
+                                <div class="product__price">
+                                    <div class="product__price-new">31 000 руб.</div>             
+                                </div>
+                                <div class="product__buttons">
+                                    <div class="product__buttons-row">
+                                        <button class="button button_product"><span>Купить</span></button>
+                                        <div class="product__button product__button-compare prompt" title="Добавить в закладки"></div>
+                                        <div class="product__button product__button-hint prompt" title="Добавить к сравнению"></div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="product product_item product_type2">
+                                <ul class="product__star">
+                                    <li></li><li></li><li></li><li></li><li></li>
+                                </ul>
+                                <div class="product__vendor">
+                                    <span>Арт:991</span>
+                                </div>
+                                <a href="#" class="product__img">
+                                    <img src="assets/img/product/1.jpg" alt="product 1">
+                                </a>
+                                <a href="#" class="product__name">Газовый настенный котел Buderus Logamax U072 24K</a>
+                                <div class="product__price">
+                                    <div class="product__price-new">31 000 руб.</div>             
+                                </div>
+                                <div class="product__buttons">
+                                    <div class="product__buttons-row">
+                                        <button class="button button_product"><span>Купить</span></button>
+                                        <div class="product__button product__button-compare prompt" title="Добавить в закладки"></div>
+                                        <div class="product__button product__button-hint prompt" title="Добавить к сравнению"></div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="product product_item product_type2">
+                                <ul class="product__star">
+                                    <li></li><li></li><li></li><li></li><li></li>
+                                </ul>
+                                <div class="product__vendor">
+                                    <span>Арт:991</span>
+                                </div>
+                                <a href="#" class="product__img">
+                                    <img src="assets/img/product/1.jpg" alt="product 1">
+                                </a>
+                                <a href="#" class="product__name">Газовый настенный котел Buderus Logamax U072 24K</a>
+                                <div class="product__price">
+                                    <div class="product__price-new">31 000 руб.</div>             
+                                </div>
+                                <div class="product__buttons">
+                                    <div class="product__buttons-row">
+                                        <button class="button button_product"><span>Купить</span></button>
+                                        <div class="product__button product__button-compare prompt" title="Добавить в закладки"></div>
+                                        <div class="product__button product__button-hint prompt" title="Добавить к сравнению"></div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="product product_item product_type2">
+                                <ul class="product__star">
+                                    <li></li><li></li><li></li><li></li><li></li>
+                                </ul>
+                                <div class="product__vendor">
+                                    <span>Арт:991</span>
+                                </div>
+                                <a href="#" class="product__img">
+                                    <img src="assets/img/product/1.jpg" alt="product 1">
+                                </a>
+                                <a href="#" class="product__name">Газовый настенный котел Buderus Logamax U072 24K</a>
+                                <div class="product__price">
+                                    <div class="product__price-new">31 000 руб.</div>             
+                                </div>
+                                <div class="product__buttons">
+                                    <div class="product__buttons-row">
+                                        <button class="button button_product"><span>Купить</span></button>
+                                        <div class="product__button product__button-compare prompt" title="Добавить в закладки"></div>
+                                        <div class="product__button product__button-hint prompt" title="Добавить к сравнению"></div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="product product_item product_type2">
+                                <ul class="product__star">
+                                    <li></li><li></li><li></li><li></li><li></li>
+                                </ul>
+                                <div class="product__vendor">
+                                    <span>Арт:991</span>
+                                </div>
+                                <a href="#" class="product__img">
+                                    <img src="assets/img/product/1.jpg" alt="product 1">
+                                </a>
+                                <a href="#" class="product__name">Газовый настенный котел Buderus Logamax U072 24K</a>
+                                <div class="product__price">
+                                    <div class="product__price-new">31 000 руб.</div>             
+                                </div>
+                                <div class="product__buttons">
+                                    <div class="product__buttons-row">
+                                        <button class="button button_product"><span>Купить</span></button>
+                                        <div class="product__button product__button-compare prompt" title="Добавить в закладки"></div>
+                                        <div class="product__button product__button-hint prompt" title="Добавить к сравнению"></div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                            
+                     
+            </div>
+        </section>
+       <!-- Блок "Похожие товары" Конец -->
+
+       <!-- Блок "Рекомендованные товары" -->
+       <section class="block section block_desc">
            <div class="block__wrapper section__wrapper">
                <h3 class="block__title">Рекомендованные товары</h3>
                <div class="block__row">
@@ -615,6 +1999,41 @@
     
 
 
+<section class="contacts section">
+    <div class="contacts__wrapper section__wrapper">
+        <h3 class="contacts__title">Контакты</h3>
+        <div class="contacts__row">
+        <div class="contacts__col">
+            <div class="contacts__block">
+                <span class="contacts__phone">
+                        <a href="tel:+78123477877">+7 812 347 7877</a>
+                        СПБ
+                </span>
+            </div>
+            <div class="contacts__block">
+                <span class="contacts__phone contacts__mail">
+                        <a href="mailto:sales@proteplo-spb.ru">sales@proteplo-spb.ru</a>
+                </span>
+            </div>
+        </div>
+        <div class="contacts__col">
+                <div class="contacts__block">
+                    <span class="contacts__phone">
+                            <a href="tel:+78123477877">+7 812 347 7877</a>
+                            Бесплатно
+                    </span>
+                </div>
+                <div class="contacts__block contacts__block_adress">
+                    <span class="contacts__adress">
+                        <b>г.Санкт-Петербург, ул.Чугунная, д.14,</b>
+                        въезд с ул.Менделеевской д.5
+                </span>
+                <a href="#!" class="pop-button" rel="#map">Проложить маршут</a>
+                </div>
+        </div>
+    </div>
+    </div>
+</section>
 <footer>
     <div class="footer-top section">
         <div class="footer-top__wrapper section__wrapper">
@@ -690,16 +2109,44 @@
             </a>
     </div>
 </div>
+<div class="popup" id="phone">
+    <div class="popup-content phone">
+        <span class="popup-close"></span>
+        <div class="feedback__wrapper section__wrapper">
+            <h3 class="feedback__title">Оставьте телефон для бесплатной консультации</h3>
+            <p class="feedback__title">Помогаем выбрать товар, даем советы по комплектации и использованию</p>
+            <form action="" class="feedback__form">
+                <input placeholder="+7 (ХХХ) ХХХ ХХ ХХ" class="feedback__phone mask">
+    
+                <button class="button"><span>Заказать звонок</span></button>
+    
+    
+                <label class="input__checkbox">Я согласен с <a href="/about/konfidentsialnost/">политикой конфиденциальности</a>
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                </label>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="map">
+        <div class="popup-content map">
+            <span class="popup-close"></span>
+            map
+        </div>
+</div>
 
 
 </div>
 
-<!-- Скрипты [Ya share2, maskedinpt, owlcarousel] -->
-<script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
-<script src="//yastatic.net/share2/share.js"></script>
+<!-- Скрипты [Ya share2, maskedinpt, owlcarousel, ui, prettyphoto] -->
+<script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+<script src="https://yastatic.net/share2/share.js"></script>
 <script type="text/javascript" src="assets/js/jquery.maskedinput.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.prettyPhoto.js"></script>
 <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.fancybox.js"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
 
 </body>

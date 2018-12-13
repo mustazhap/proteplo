@@ -45,6 +45,7 @@
         margin: 10px 6px 10px 6px;
         padding: 15px;
         box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+       
 
         &:hover{
             box-shadow: inset 0px 0px 0px 1px #ff8400, 0px 0px 10px 2px #E0E0E0;
@@ -193,13 +194,26 @@
         margin: 0;
         padding: 0;
         display: flex;
+        background-image: url("../img/product/stars.png");
+        background-repeat: no-repeat;
+        width: 110px;
+        height: 13px;
 
-        li{
-            list-style-type:none;
-            width: 12px;
-            height: 12px;
-            margin-right: 5px;
-            background: url("../img/product/star.svg") no-repeat;
+        &_s1{
+            background-position: 0 -52px;
+        }
+
+        &_s2{
+            background-position: 0 -39px;
+        }
+        &_s3{
+            background-position: 0 -26px;
+        }
+        &_s4{
+            background-position: 0 -13px;
+        }
+        &_s5{
+            background-position: 0 0;
         }
     }
 
@@ -337,9 +351,13 @@
         }
     }
 
+    &__r{
+        display: flex;
+        width: 40%;
+    }
     // Продукт list формате
     &-list{
-        height: 119px;
+        height: 90px;
         width: 100%;
         padding: 0;
         margin: -1px 0 0 0;
@@ -354,7 +372,28 @@
             box-shadow: inset 0px 0px 0px 1px rgba(255, 132, 0, 1);
      
         }
-      
+        &__stock{
+            position: relative;
+            span{
+                margin-top: 5px;
+                display: block;
+                width: 100px;
+                color: #49bc3a;
+                font-size: 14px;
+                text-align: right;
+                position: relative;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    background-color: #49bc3a;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    top: 5px;
+                    margin-left: -15px;
+                }
+            }
+        }
         &__articule{
             padding-left: 20px;
             width: 10%;
@@ -364,6 +403,7 @@
         }
 
         &__name{
+            display: flex;
             width: 50%;
             padding-left: 20px;
             padding-top: 20px;
@@ -374,7 +414,7 @@
         }
 
         &__price{
-            width: 10%;
+            width: 25%;
             display: flex;
             padding-top: 20px;
             padding-left: 20px;
@@ -400,7 +440,7 @@
 
         &__buttons{
 
-            width: 30%;
+            width: 75%;
             padding-right: 20px;
             padding-top: 20px;
             display: flex;
@@ -427,8 +467,16 @@
 
 .prompt {
     position: relative;
+
+    &_compare{
+        
+    }
+    &__fav{
+
+    }
 }
 .prompt div {
+    position: absolute;
     border: 1px solid #666;
     border-radius: 3px;
     padding: 5px 8px;
@@ -437,12 +485,18 @@
     visibility: hidden;
     width: 100px;
     text-align: center;
-    margin-top: -50px;
-    margin-left: -10px;
+    margin-top: -55px;
+    margin-left: -30px;
     background: #fff;
     color: #444;
     box-shadow: 0 0 3px;
     display: none;
     display: flex;
     z-index: 111;
+  }
+
+  .color-region{
+      width: auto;
+      height: 4px;
+      background: linear-gradient(to bottom,#4dbe3e 0,#5fcf50 100%);
   }

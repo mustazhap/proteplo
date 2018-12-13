@@ -16,6 +16,8 @@ html, body{
     }
   }
 
+  
+
 }
 
 a{
@@ -39,8 +41,14 @@ a{
 @import "../../blocks/common/category/category";
 @import "../../blocks/common/filter/filter";
 @import "../../blocks/common/select/select";
-  
+@import "../../blocks/common/slider/slider";
+@import "../../blocks/common/tabs/tabs";
+@import "../../blocks/common/pagination/pagination";
 
+
+
+  
+ 
 
 
 
@@ -59,6 +67,12 @@ a{
 @import "../../blocks/page/info/info";
 @import "../../blocks/page/footer/footer";
 @import "../../blocks/page/favorites/favorites";
+@import "../../blocks/page/support/support";
+
+// popup
+@import "../../blocks/page/popup/popup";
+
+
 
 // Trademarks
 @import "../../blocks/page/trademarks/trademarks";

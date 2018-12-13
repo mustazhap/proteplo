@@ -18,17 +18,22 @@
 <body>
 
 @@include("blocks/page/header/header.html")
+<div class="header__mob-title">
+        <a href="/" class="">Интернет-магазин отопления и водоснабжения</a>
+    </div>
 @@include("blocks/page/promo/promo.html")
 @@include("blocks/page/advantages/advantages.html")
 @@include("blocks/page/help/help.html")
+<div class="feedbac-index">
 @@include("blocks/page/feedback/feedback.html")
+</div>
 
 <!-- Блок "Хиты продаж" -->
 <section class="block block_grey section">
 		<div class="block__wrapper section__wrapper">
 			<h3 class="section__title">Хиты продаж</h3>
 	
-			<div class="owl-carousel owl-theme">
+			<div class="owl-carousel owl-theme owl-main">
 						<div class="product">
 							<div class="product__hit">Хит продаж</div>
 							<ul class="product__star">
@@ -164,7 +169,7 @@
         <div class="block__wrapper section__wrapper">
             <h3 class="section__title">Расспродажа</h3>
     
-            <div class="owl-carousel owl-theme">
+            <div class="owl-carousel owl-theme owl-main">
                         <div class="product">
                             <ul class="product__star">
                                 <li></li><li></li><li></li>
@@ -291,15 +296,21 @@
 @@include("blocks/page/info/info.html")
 @@include("blocks/page/footer/footer.html")
 @@include("blocks/page/favorites/favorites.html")
+@@include("blocks/page/popup/popup.html")
+
 
 
 </div>
 
 
 
+<!-- Скрипты [Ya share2, maskedinpt, owlcarousel, ui, prettyphoto] -->
+<script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+<script src="https://yastatic.net/share2/share.js"></script>
 <script type="text/javascript" src="assets/js/jquery.maskedinput.min.js"></script>
-
 <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.fancybox.js"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
 
 </body>

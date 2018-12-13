@@ -38,7 +38,7 @@
             <span class="category__caption">Категория товаров</span>
             <ul>
                 <li class="category_depth1"><a href="#">Канализационные установки</a><span>444</span></li>
-                <li class="category_depth2"><a href="#">Септики</a><span>12</span></li>
+                <li class="categoy_depth2"><a href="#">Септики</a><span>12</span></li>
                 <li class="category_depth3"><a href="#">Пластиковые</a><span>3</span></li>
                 <li class="category_depth3"><a href="#">Пластиковые</a><span>3</span></li>
                 <li class="category_depth3"><a href="#">Пластиковые</a><span>2</span></li>
@@ -65,27 +65,251 @@
             
         </div>
         <div class="aside__filter">
-            <div class="aside__filter-block">
-                <div class="aside__filter-title"><span>Розничная цена</span></div>
-                <div class="aside__filter-body">                    
+        <!-- Фильтр диапазон -->
+        <div class="aside__filter-block">
+                <div class="aside__filter-title spoiler"><span>Розничная цена</span></div>
+                <div class="aside__filter-body spoiler-body">                    
                     <div class="aside__filter-row">
                         <div class="aside__filter-input">
                             <span>от</span>
-                            <input type="text" class="input__text sliderValue" data-index="0" value="10">
+                            <input type="text" class="input__text sliderValue" data-index="0" value="">
                         </div>  
                         <div class="aside__filter-input">
                             <span>до</span>
-                            <input type="text" class="input__text sliderValue" data-index="1" value="90">
+                            <input type="text" class="input__text sliderValue" data-index="1" value="">
                         </div>
                     </div>
-                    <div class="aside__filter-slider">
-                            <div id="slider">
+                    <div class="slider">
+                            <div class="slider__text">
+                                <div class="slider__number">0</div>
+                                <div class="slider__number">50</div>
+                                <div class="slider__number">100</div>
+                            </div>
+                            <div class="slider__line">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="sliderr">
                                     <div class="color-region" style="background-color: red"></div>
                             </div>
                     </div>
                 </div>
-                </div>
+            </div>
+            <!-- Фильтр диапазон конец -->
+
+            <!-- Фильтр чекбокс -->
             
+            <div class="aside__filter-block">
+                    <div class="aside__filter-title spoiler"><span>Производитель</span></div>
+                    <div class="aside__filter-body spoiler-body">   
+                        <div class="aside__checks">
+                                <label class="input__checkbox"><a href="#">ACV</a>
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                            </label>
+                            <label class="input__checkbox"><a href="#">ACV</a>
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="input__checkbox"><a href="#">ACV</a>
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                    </label>
+                    <label class="input__checkbox"><a href="#">ACV</a>
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                </label>
+                <label class="input__checkbox"><a href="#">ACV</a>
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+            </label>
+                        </div>  
+                        <div class="aside__checks aside__checks-hidden">
+                                <label class="input__checkbox"><a href="#">ACV</a>
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                            </label>
+                            <label class="input__checkbox"><a href="#">ACV</a>
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="input__checkbox"><a href="#">ACV</a>
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                    </label>
+                        </div>  
+                        <div class="aside__checks-show"><a href="#!">Показать все</a></div>
+                        
+                </div>
+        </div>
+        <!-- Фильтр чекбокс конец -->
+        <!-- Фильтр диапазон -->
+                <div class="aside__filter-block">
+                    <div class="aside__filter-title spoiler"><span>Розничная цена</span></div>
+                    <div class="aside__filter-body spoiler-body">                    
+                        <div class="aside__filter-row">
+                            <div class="aside__filter-input">
+                                <span>от</span>
+                                <input type="text" class="input__text sliderValue" data-index="0" value="">
+                            </div>  
+                            <div class="aside__filter-input">
+                                <span>до</span>
+                                <input type="text" class="input__text sliderValue" data-index="1" value="">
+                            </div>
+                        </div>
+                        <div class="slider">
+                                <div class="slider__text">
+                                    <div class="slider__number">0</div>
+                                    <div class="slider__number">50</div>
+                                    <div class="slider__number">100</div>
+                                </div>
+                                <div class="slider__line">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="sliderr">
+                                        <div class="color-region" style="background-color: red"></div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Фильтр диапазон конец -->
+    
+                <!-- Фильтр чекбокс -->
+                
+                <div class="aside__filter-block">
+                        <div class="aside__filter-title spoiler"><span>Производитель</span></div>
+                        <div class="aside__filter-body spoiler-body">   
+                            <div class="aside__checks">
+                                    <label class="input__checkbox"><a href="#">ACV</a>
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                </label>
+                                <label class="input__checkbox"><a href="#">ACV</a>
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                            </label>
+                            <label class="input__checkbox"><a href="#">ACV</a>
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="input__checkbox"><a href="#">ACV</a>
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                    </label>
+                    <label class="input__checkbox"><a href="#">ACV</a>
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                </label>
+                            </div>  
+                            <div class="aside__checks aside__checks-hidden">
+                                    <label class="input__checkbox"><a href="#">ACV</a>
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                </label>
+                                <label class="input__checkbox"><a href="#">ACV</a>
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                            </label>
+                            <label class="input__checkbox"><a href="#">ACV</a>
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                        </label>
+                            </div>  
+                            <div class="aside__checks-show"><a href="#!">Показать все</a></div>
+                            
+                    </div>
+            </div>
+            <!-- Фильтр чекбокс конец -->
+        <!-- Фильтр диапазон -->
+                <div class="aside__filter-block">
+                    <div class="aside__filter-title spoiler"><span>Розничная цена</span></div>
+                    <div class="aside__filter-body spoiler-body">                    
+                        <div class="aside__filter-row">
+                            <div class="aside__filter-input">
+                                <span>от</span>
+                                <input type="text" class="input__text sliderValue" data-index="0" value="">
+                            </div>  
+                            <div class="aside__filter-input">
+                                <span>до</span>
+                                <input type="text" class="input__text sliderValue" data-index="1" value="">
+                            </div>
+                        </div>
+                        <div class="slider">
+                                <div class="slider__text">
+                                    <div class="slider__number">0</div>
+                                    <div class="slider__number">50</div>
+                                    <div class="slider__number">100</div>
+                                </div>
+                                <div class="slider__line">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="sliderr">
+                                        <div class="color-region" style="background-color: red"></div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Фильтр диапазон конец -->
+    
+                <!-- Фильтр чекбокс -->
+                
+                <div class="aside__filter-block">
+                        <div class="aside__filter-title spoiler"><span>Производитель</span></div>
+                        <div class="aside__filter-body spoiler-body">   
+                            <div class="aside__checks">
+                                    <label class="input__checkbox"><a href="#">ACV</a>
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                </label>
+                                <label class="input__checkbox"><a href="#">ACV</a>
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                            </label>
+                            <label class="input__checkbox"><a href="#">ACV</a>
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="input__checkbox"><a href="#">ACV</a>
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                    </label>
+                    <label class="input__checkbox"><a href="#">ACV</a>
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                </label>
+                            </div>  
+                            <div class="aside__checks aside__checks-hidden">
+                                    <label class="input__checkbox"><a href="#">ACV</a>
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                </label>
+                                <label class="input__checkbox"><a href="#">ACV</a>
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                            </label>
+                            <label class="input__checkbox"><a href="#">ACV</a>
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                        </label>
+                            </div>  
+                            <div class="aside__checks-show"><a href="#!">Показать все</a></div>
+                            
+                    </div>
+            </div>
+            <!-- Фильтр чекбокс конец -->
+        
+        
+        <div class="aside__filter-block">
+            <button class="button"><span>Показать</span></button>
+        </div>
+        <div class="aside__clear">
+            <a href="#">Сбросить</a>
+        </div>
         </div>
         <div class="aside__share">
                 <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir"></div>
@@ -99,21 +323,10 @@
 
     <!-- Body страницы бренды -->
     <div class="trademarks__body">
-            <div class="trademarks__title">
-                <h1 class="section__title">Оборудование для канализаций Uponor</h1>
-                <img src="assets/img/trademarks/uponor_1.png" alt="">
+            <div class="trademarks__title list__title">
+                <h1 class="section__title ">Водонагреватели</h1>
             </div>
 
-            <div class="trademarks__text">
-                <p>
-                    Корпорация Uponor является ведущим европейским поставщиком решений для внутреннего климата помещений и водоснабжения коммерческих объектов и жилых домов. Решения для водопроводных систем, охлаждения и обогрева помещений являются ключевыми системами компании . В частности, корпорация производит широкий ассортимент качественных трубопроводных и инженерных систем: для теплоснабжения, горячего и
-                    <span class="trademarks__text_hidden">холодного водоснабжения, напольного и радиаторного отопления, охлаждения, а также системы коммунального хозяйства.<br><br>
-                            У нас вы найдете любые системы внутреннего климата фирмы Uponor: напольное отопление, напольное отопление промышленных помещений, напольное охлаждение, системы снеготаяния, а также решения для спортивных объектов - обогрев полов спортивных учреждений, кондиционирование травяного покрытия.</span>
-                </p>
-                <div class="trademarks__text_more">
-                    <span>...</span> <a href="#!">Читать далее</a>
-                </div>
-            </div>
         <div class="trademarks__content">
             @@include("blocks/common/filter/filter.html")
 
@@ -123,6 +336,15 @@
                     @@include("blocks/common/product/product.html")
                     @@include("blocks/common/product/product.html")
                     @@include("blocks/common/product/product.html")
+                    <div class="item__aside-block">
+                        <img src="assets/img/item/img.png" alt="Img" class="item__aside-img">
+                        <a href="#" class="item__aside-link">На этой неделе для вас специальная скидка на товары компании Экопром! До 10% по промокоду "Маркет"</a>
+
+                        <form class="item__aside-form">
+                            <input type="text" class="input__text mask" placeholder="+7 (XXX) XXX XX XX">
+                            <button class="button"><span>Узнать свою скидку</span></button>
+                        </form>
+                </div>
                     @@include("blocks/common/product/product.html")
                     @@include("blocks/common/product/product.html")
                     @@include("blocks/common/product/product.html")
@@ -136,118 +358,263 @@
                         <div class="product-header__name">Название</div>
                         <div class="product-header__price">Цена</div>
                     </div>
+                    
                     <div class="product-list">
-                        <div class="product-list__articule">
-                            <span>Арт.:<b>5776</b></span>
-                        </div>
-                        <div class="product-list__name">
-                            <a href="#!">Uponor Smart стягивающий хомут l=200 мм (1086531)</a>
-                        </div>
-                        <div class="product-list__price">
-                            <span class="product-list__new">450<span>руб.</span></span>
-                        </div>
-                        <div class="product-list__buttons">
-                            <div class="product__buttons-row">
-                                <button class="button button_product"><span>Купить</span></button>
-                                <div class="product__button product__button-compare prompt" title=""><div>Добавить в закладки</div></div>
-                                <div class="product__button product__button-hint prompt" title=""><div>Добавить к сравнению</div></div>
+                            <div class="product-list__articule">
+                                <span>Арт.:<b>5776</b></span>
+                            </div>
+                            <div class="product-list__name">
+                                <a href="#!">Uponor Smart стягивающий хомут l=200 мм (1086531)</a>
+                                <div class="product-list__stock">
+                                        <span>В наличии</span>
+                                    </div>
+                            </div>
+                           <div class="product__r">
+                            <div class="product-list__price">
+                                <span class="product-list__new">450<span>руб.</span></span>
+                            </div>
+                            <div class="product-list__buttons">
+                                <div class="product__buttons-row">
+                                    <button class="button button_product"><span>Купить</span></button>
+                                    <div class="product__button product__button-compare prompt" title=""><div>Добавить в закладки</div></div>
+                                    <div class="product__button product__button-hint prompt" title=""><div>Добавить к сравнению</div></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="product-list">
-                        <div class="product-list__articule">
-                            <span>Арт.:<b>5776</b></span>
                         </div>
-                        <div class="product-list__name">
-                            <a href="#!">Uponor Smart стягивающий хомут l=200 мм (1086531)</a>
-                        </div>
-                        <div class="product-list__price">
-                            <span class="product-list__new">450<span>руб.</span></span>
-                        </div>
-                        <div class="product-list__buttons">
-                            <div class="product__buttons-row">
-                                <button class="button button_product"><span>Купить</span></button>
-                                <div class="product__button product__button-compare prompt" title=""><div>Добавить в закладки</div></div>
-                                <div class="product__button product__button-hint prompt" title=""><div>Добавить к сравнению</div></div>
+                        <div class="product-list">
+                            <div class="product-list__articule">
+                                <span>Арт.:<b>5776</b></span>
+                            </div>
+                            <div class="product-list__name">
+                                <a href="#!">Uponor Smart стягивающий хомут l=200 мм (1086531)</a>
+                                <div class="product-list__stock">
+                                        <span>В наличии</span>
+                                    </div>
+                            </div>
+                           <div class="product__r">
+                            <div class="product-list__price">
+                                <span class="product-list__new">450<span>руб.</span></span>
+                            </div>
+                            <div class="product-list__buttons">
+                                <div class="product__buttons-row">
+                                    <button class="button button_product"><span>Купить</span></button>
+                                    <div class="product__button product__button-compare prompt" title=""><div>Добавить в закладки</div></div>
+                                    <div class="product__button product__button-hint prompt" title=""><div>Добавить к сравнению</div></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="product-list">
-                        <div class="product-list__articule">
-                            <span>Арт.:<b>5776</b></span>
                         </div>
-                        <div class="product-list__name">
-                            <a href="#!">Uponor Smart стягивающий хомут l=200 мм (1086531)</a>
-                        </div>
-                        <div class="product-list__price">
-                            <span class="product-list__new">450<span>руб.</span></span>
-                        </div>
-                        <div class="product-list__buttons">
-                            <div class="product__buttons-row">
-                                <button class="button button_product"><span>Купить</span></button>
-                                <div class="product__button product__button-compare prompt" title=""><div>Добавить в закладки</div></div>
-                                <div class="product__button product__button-hint prompt" title=""><div>Добавить к сравнению</div></div>
+                        <div class="product-list">
+                            <div class="product-list__articule">
+                                <span>Арт.:<b>5776</b></span>
+                            </div>
+                            <div class="product-list__name">
+                                <a href="#!">Uponor Smart стягивающий хомут l=200 мм (1086531)</a>
+                                <div class="product-list__stock">
+                                        <span>В наличии</span>
+                                    </div>
+                            </div>
+                           <div class="product__r">
+                            <div class="product-list__price">
+                                <span class="product-list__new">450<span>руб.</span></span>
+                            </div>
+                            <div class="product-list__buttons">
+                                <div class="product__buttons-row">
+                                    <button class="button button_product"><span>Купить</span></button>
+                                    <div class="product__button product__button-compare prompt" title=""><div>Добавить в закладки</div></div>
+                                    <div class="product__button product__button-hint prompt" title=""><div>Добавить к сравнению</div></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="product-list">
-                        <div class="product-list__articule">
-                            <span>Арт.:<b>5776</b></span>
                         </div>
-                        <div class="product-list__name">
-                            <a href="#!">Uponor Smart стягивающий хомут l=200 мм (1086531)</a>
-                        </div>
-                        <div class="product-list__price">
-                            <span class="product-list__new">450<span>руб.</span></span>
-                        </div>
-                        <div class="product-list__buttons">
-                            <div class="product__buttons-row">
-                                <button class="button button_product"><span>Купить</span></button>
-                                <div class="product__button product__button-compare prompt" title=""><div>Добавить в закладки</div></div>
-                                <div class="product__button product__button-hint prompt" title=""><div>Добавить к сравнению</div></div>
+                        <div class="product-list">
+                            <div class="product-list__articule">
+                                <span>Арт.:<b>5776</b></span>
+                            </div>
+                            <div class="product-list__name">
+                                <a href="#!">Uponor Smart стягивающий хомут l=200 мм (1086531)</a>
+                                <div class="product-list__stock">
+                                        <span>В наличии</span>
+                                    </div>
+                            </div>
+                           <div class="product__r">
+                            <div class="product-list__price">
+                                <span class="product-list__new">450<span>руб.</span></span>
+                            </div>
+                            <div class="product-list__buttons">
+                                <div class="product__buttons-row">
+                                    <button class="button button_product"><span>Купить</span></button>
+                                    <div class="product__button product__button-compare prompt" title=""><div>Добавить в закладки</div></div>
+                                    <div class="product__button product__button-hint prompt" title=""><div>Добавить к сравнению</div></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="product-list">
-                        <div class="product-list__articule">
-                            <span>Арт.:<b>5776</b></span>
                         </div>
-                        <div class="product-list__name">
-                            <a href="#!">Uponor Smart стягивающий хомут l=200 мм (1086531)</a>
-                        </div>
-                        <div class="product-list__price">
-                            <span class="product-list__new">450<span>руб.</span></span>
-                        </div>
-                        <div class="product-list__buttons">
-                            <div class="product__buttons-row">
-                                <button class="button button_product"><span>Купить</span></button>
-                                <div class="product__button product__button-compare prompt" title=""><div>Добавить в закладки</div></div>
-                                <div class="product__button product__button-hint prompt" title=""><div>Добавить к сравнению</div></div>
+                        <div class="product-list">
+                            <div class="product-list__articule">
+                                <span>Арт.:<b>5776</b></span>
+                            </div>
+                            <div class="product-list__name">
+                                <a href="#!">Uponor Smart стягивающий хомут l=200 мм (1086531)</a>
+                                <div class="product-list__stock">
+                                        <span>В наличии</span>
+                                    </div>
+                            </div>
+                           <div class="product__r">
+                            <div class="product-list__price">
+                                <span class="product-list__new">450<span>руб.</span></span>
+                            </div>
+                            <div class="product-list__buttons">
+                                <div class="product__buttons-row">
+                                    <button class="button button_product"><span>Купить</span></button>
+                                    <div class="product__button product__button-compare prompt" title=""><div>Добавить в закладки</div></div>
+                                    <div class="product__button product__button-hint prompt" title=""><div>Добавить к сравнению</div></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="product-list">
-                        <div class="product-list__articule">
-                            <span>Арт.:<b>5776</b></span>
                         </div>
-                        <div class="product-list__name">
-                            <a href="#!">Uponor Smart стягивающий хомут l=200 мм (1086531)</a>
-                        </div>
-                        <div class="product-list__price">
-                            <span class="product-list__new">450<span>руб.</span></span>
-                        </div>
-                        <div class="product-list__buttons">
-                            <div class="product__buttons-row">
-                                <button class="button button_product"><span>Купить</span></button>
-                                <div class="product__button product__button-compare prompt" title=""><div>Добавить в закладки</div></div>
-                                <div class="product__button product__button-hint prompt" title=""><div>Добавить к сравнению</div></div>
+                </div>
+                <!-- Вид список конец -->
+            
+                <!-- Фильтр товаров -->
+        <div class="fbody">
+            <div class="fbody__header">
+                    Фильтр
+            </div>  
+            <!-- Фильтр диапазон -->
+            <div class="aside__filter-block">
+                    <div class="aside__filter-title spoiler"><span>Розничная цена</span></div>
+                    <div class="aside__filter-body spoiler-body">                    
+                        <div class="aside__filter-row">
+                            <div class="aside__filter-input">
+                                <span>от</span>
+                                <input type="text" class="input__text sliderValue" data-index="0" value="">
+                            </div>  
+                            <div class="aside__filter-input">
+                                <span>до</span>
+                                <input type="text" class="input__text sliderValue" data-index="1" value="">
                             </div>
+                        </div>
+                        <div class="slider">
+                                <div class="slider__text">
+                                    <div class="slider__number">0</div>
+                                    <div class="slider__number">50</div>
+                                    <div class="slider__number">100</div>
+                                </div>
+                                <div class="slider__line">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="sliderr">
+                                        <div class="color-region" style="background-color: red"></div>
+                                </div>
                         </div>
                     </div>
                 </div>
-                <!-- Вид список конец -->
-            @@include("blocks/common/filter/filter.html")
-            @@include("blocks/page/other/other.html")
+                <!-- Фильтр диапазон конец -->
+
+        <!-- Фильтр чекбокс -->
+        
+        <div class="aside__filter-block">
+                <div class="aside__filter-title spoiler"><span>Производитель</span></div>
+                <div class="aside__filter-body spoiler-body">   
+                    <div class="aside__checks">
+                            <label class="input__checkbox"><a href="#">ACV</a>
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="input__checkbox"><a href="#">ACV</a>
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                    </label>
+                    <label class="input__checkbox"><a href="#">ACV</a>
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                </label>
+                <label class="input__checkbox"><a href="#">ACV</a>
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+            </label>
+            <label class="input__checkbox"><a href="#">ACV</a>
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+        </label>
+                    </div>  
+                    <div class="aside__checks aside__checks-hidden">
+                            <label class="input__checkbox"><a href="#">ACV</a>
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="input__checkbox"><a href="#">ACV</a>
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                    </label>
+                    <label class="input__checkbox"><a href="#">ACV</a>
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                </label>
+                    </div>  
+                    <div class="aside__checks-show"><a href="#!">Показать все</a></div>
+                    
+            </div>
+    </div>
+    <!-- Фильтр чекбокс конец -->
+    <div class="fbody__buttons">
+        <div class="fbody__frows">
+            <button class="button"><span>Показать</span></button>
+            <button class="button button_cancel"><span>Отмена</span></button>
+        </div>
+        <div class="aside__clear">
+                <a href="#">Сбросить</a>
+            </div>
+    </div>
+        </div>
+
+
+    <div class="filter filter_bottom">
+        <a href="#!" class="filter__show">
+            Фильтр
+        </a>
+        <div class="filter__left">
+            <div class="filter__price">
+                <span>Сортировать:</span>
+                <select class="select">
+                        <option value="сначала дешевые">увеличению цены</option>
+                        <option value="сначала дороже">уменшению цены</option>
+                        <option value="по популярности">популярности</option>
+                    </select>
+            </div>
+            <div class="filter__numb">
+                    <span>Товаров на странице:</span>
+                    <select class="select">
+                        <option value="20">20</option>
+                        <option value="40">40</option>
+                        <option value="60">60</option>
+                    </select>
+            </div>
+            <div class="filter__pages">
+                <span>Страница</span>
+                <span>1</span>
+                <a href="#!">2</a>
+                <a href="#!">3</a>
+                <a href="#!">4</a>
+                <span>...</span>
+                <a href="#!">15</a>
+            </div>
+        </div>
+        <div class="filter__view">
+            <span>Вид</span>
+            <a href="#!" class="filter__plit filter__plit_active view-button"></a>
+            <a href="#!" class="filter__list view-button"></a>
+    </div>
+    
+</div>
+<!-- Фильтр конец -->
+            @@include("blocks/common/pagination/pagination.html")
+
+            @@include("blocks/page/support/support.html")
 
 
 
@@ -257,15 +624,20 @@
     </div>
 
 </section>
+@@include("blocks/common/pagination/pagination.html")
 @@include("blocks/page/footer/footer.html")
 @@include("blocks/page/favorites/favorites.html")
+@@include("blocks/page/popup/popup.html")
 
 </div>
 
-<script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
-<script src="//yastatic.net/share2/share.js"></script>
+<!-- Скрипты [Ya share2, maskedinpt, owlcarousel, ui, prettyphoto] -->
+<script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+<script src="https://yastatic.net/share2/share.js"></script>
 <script type="text/javascript" src="assets/js/jquery.maskedinput.min.js"></script>
-<script type="text/javascript" src="assets/js/.js"></script>
+<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.fancybox.js"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
 
 </body>

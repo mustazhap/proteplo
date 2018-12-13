@@ -93,6 +93,10 @@
 
 
         &__wrapper{
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: 20px;
+            margin-right: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -104,4 +108,97 @@
             padding: 10px 0 15px 0;
         }
     }
+}
+
+.contacts{
+    display: none;
+    *{
+        box-sizing: border-box;
+    }
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title{
+        font-size: 34px;
+        color: #444;
+        font-family: $RobotoCondensed;
+        margin-bottom: 20px;
+    }
+    &__col{
+        width: 48%;
+    }
+    &__row{
+        display: flex;
+        justify-content: space-between;
+    }
+    a{
+        color: #0066cc;
+        font-size: 16px;
+    }
+
+    span{
+        a{
+            margin-right: 10px;
+        }
+        b{
+            color: #444;
+        }
+    }
+    &__phone{
+        padding-left: 20px;
+        position: relative;
+        &:before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -6px;
+            width: 12px;
+            height: 12px;
+            background: url("../img/header/phone.svg") no-repeat;
+        }
+        
+    
+    }
+
+    &__mail{
+        &:before{
+            background: url("../img/header/adress.svg") no-repeat;
+
+        }
+    }
+    &__block{
+        border: 1px solid #00d148;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        color: #999;
+        display: flex;
+        flex-direction: column;
+
+        &_adress{
+            padding-left: 40px;
+            position: relative;
+            &:before{
+                content: "";
+                position: absolute;
+                left: 15px;
+                top: 50%;
+                width: 20px;
+                height: 20px;
+                margin-top: -10px;
+                background: url("../img/item/location.svg") no-repeat;
+            }
+        }
+    }
+    
+}
+
+.footer-middle__menu{
+    display: flex;
+    flex-wrap: wrap;
 }

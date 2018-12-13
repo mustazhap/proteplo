@@ -16,16 +16,20 @@
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
-
         &_orange{
             background: url("../img/advantages/back1.png") no-repeat;
+            background-position-x: right;
         }
         
         &_green{
             background: url("../img/advantages/back2.png") no-repeat;
+            background-position-x: right;
+
         }
         &_blue{
             background: url("../img/advantages/back3.png") no-repeat;
+            background-position-x: right;
+
         }
 
         &:hover{

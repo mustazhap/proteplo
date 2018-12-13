@@ -1,0 +1,224 @@
+.tabs{
+    display: flex;
+    flex-direction: column;
+
+    &__controll{
+        display: flex;
+        border-bottom: 1px solid #ccc;
+
+    }
+
+    a{
+        color: #0066cc;
+    }
+    &__button{
+        cursor: pointer;
+        font-size: 14px;
+        padding: 5px 21px;
+        line-height: 31px;
+        border-top: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        color: #444;
+
+        &:last-child{
+            border-right: 1px solid #ccc;
+        }
+
+        &_active{
+            background: #5ccc4d;
+            color: white;
+        }
+    }
+
+    &__body{
+        padding: 20px 20px 15px 20px;
+        width: 100%;
+        position: relative;
+        font-size: 14px;
+        line-height: 24px;
+        color: #444;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #ccc;  
+        display: none;
+        
+        p{
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    &__title{
+        font-size: 22px;
+        font-weight: 400;
+    }
+    
+    
+
+}
+
+.table{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 13px;
+    color: #444444;
+    
+    
+    &__row{
+        display: flex;
+        margin-bottom: 6px;
+        background: #EFEFEF;
+
+        &:nth-child(2n){
+            background: transparent;
+            box-shadow: inset 1px 1px 1px 1px #F4F4F4, inset 0px -1px 0px 0px #F4F4F4;
+        }
+    }
+
+    &__col{
+        width: 50%;
+        padding: 5px 20px;
+    }
+}
+
+.horizont{
+    display: flex;
+    &__img{
+        padding-top: 13px;
+        padding-left: 20px;
+        margin-right: 10px;
+        img{
+            width: 90px;
+            height: 120px;
+        }
+    }
+
+    &__col{
+        width: 90%;
+    }
+
+    &__bottom{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    &__price{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__old{
+        font-size: 14px;
+    text-decoration: line-through;
+    color: #999999;
+    }
+
+    &__new{
+        font-size: 24px;
+    color: #444444;
+    line-height: 1;
+    }
+    .product__buttons-row{
+        margin-top: 0!important;
+    }
+    .button_product{
+        height: 40px;
+        width: 175px;
+    }
+    .product__button{
+        height: 40px;
+    }
+    &__row{
+        &:first-child{
+            height: 54px;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            padding-left: 5px;
+        }
+
+        &:nth-child(2){
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            a{
+                font-size: 14px;
+                color: #0066cc;
+                margin-top: 9px;
+            }
+        }
+
+        &::nth-child(3){
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .input__checkbox{
+        font-weight: 300;
+        color: #444;
+    }
+
+    .checkmark{
+        left: 0;
+        height: 13px;
+        width: 13px;
+        top: 3px;
+        &:after{
+            left: 4px;
+            top: -5px;
+            width: 6px;
+            height: 11px;
+        }
+    }
+}
+
+.tabs-mobile{
+    display: none;
+    .spoiler_active{
+        font-weight: bold;
+        &:before{
+            transform: rotate(45deg);
+            top: 18px;
+        }
+    }
+    margin-top: 20px;
+    &__button{
+        position: relative;
+        color: #444;
+        border-top: 1px solid #ccc;
+        background-color: #F2F2F2;
+        margin: 0;
+        padding: 12px 20px;
+        display: block;
+        cursor: pointer;
+        font-weight: 400;
+
+        &:before{
+            content: "";
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            width: 12px;
+            height: 12px;
+            border-top: 2px solid #444;
+            border-left: 2px solid #444;
+            -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+        }
+    }
+    &__body{
+        display: none;
+    }
+
+    .tabs__body{
+        display: block;
+    }
+}

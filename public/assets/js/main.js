@@ -9,6 +9,28 @@ $(document).ready(function () {
     $(this).find(".nav__drop").css({"top":"62px", "opacity":"0", "visibility":"hidden"}); 
   });
 
+  // Second menu
+
+  $(".header-bottom__menu-item, .header-bottom__menu-drop").mouseenter(function(){
+    $(this).find(".header-bottom__menu-drop").css({ "opacity":"1", "visibility":"visible"}); 
+  });
+
+  $(".header-bottom__menu-item").mouseleave(function(){
+    $(this).find(".header-bottom__menu-drop").css({"opacity":"0", "visibility":"hidden"}); 
+  });
+
+// Filter menu
+  $(".filter__show").click(function(){
+    $(this).toggle();
+    $(".fbody").toggle();
+  })
+
+  $(".fbody__header").click(function(){
+    $(".fbody").toggle();
+    $(".filter__show").toggle();
+  })
+
+  // Burger menu
   var a = true;
   $(".burger" ).click(function() {
     $(this).toggleClass("burger_active"); 
@@ -16,15 +38,51 @@ $(document).ready(function () {
     if (a){
       $("#burger-menu").css("left", "0");
       a = false;
+      $("body").css("overflow", "hidden");
     }else{
       $("#burger-menu").css("left", "-100%");
       a = true;
+      $("body").css("overflow", "auto");
     }
  });
 
+ $(".li-open" ).click(function() {
+  $(this).parent(".burger-wrapper").css({"visibility":"hidden", "opacity":"0"}).next().css({"visibility":"visible", "opacity":"1"});
+});
+
+$(".li-back span" ).click(function() {
+  $(this).parent().parent().parent(".burger-wrapper").css({"visibility":"hidden", "opacity":"0"}).prev().css({"visibility":"visible", "opacity":"1"});
+  
+});
+
+//  Search mob
+$(".search").click(function(){
+  $(".header__mob-search").toggleClass("search_active"); 
+});
+ // show popup
+ $(".popup-close").click(function(){
+   $(".popup").hide();
+   $("body").css("overflow", "auto");
+ });
+ $(".popup").click(function(){
+  $(".popup").hide();
+  $("body").css("overflow", "auto");
+
+});
+ 
+ $(".popup-content").click(function(event){
+  event.stopPropagation();
+});
+
+ $(".pop-button").click(function(){
+  var a = $(this).attr("rel");
+  $(a).show().css("display", "flex");
+   $("body").css("overflow", "hidden");
+})
+
   // Slider Promo
   function slideSwitch()
-    { 
+    {
         var slide_wrapper = $("#wrapper").css("left");
         if ( slide_wrapper != "-1150px" ){
           $("#wrapper").css("left", "-=575");
@@ -59,8 +117,29 @@ $(document).ready(function () {
   });
 
   
-// Подсказка
+// 
+$().fancybox({
+  selector : '.fancy',
+  thumbs   : false,
+  loop: true,
+  infobar: false
+});
+// Tabs 
+$(".tabs__button").click(function(){
+  var a = $(this).attr("rel");
+  $( ".tabs__body" ).each(function() {
+    $( this ).css( "display", "none");
+  });
 
+  $( ".tabs__button" ).each(function() {
+    $( this ).removeClass("tabs__button_active");
+  });
+  $(".tabs__body").eq(a).css("display","block");
+  $(this).addClass("tabs__button_active");
+  
+});
+
+// Подсказка
 $('.prompt').each(function() {
   var el = $(this);
   var title = el.attr('title');
@@ -69,9 +148,29 @@ $('.prompt').each(function() {
     el.attr('title', '').append('<div>' + title + '</div>');
     var width = el.find('div').width();
     var height = el.find('div').height();
+
+    el.hover(
+      function() {
+        console.log("sdf");
+        el.find('div').css("visibility", "visible");
+          
+      },).mouseleave(function() {
+        el.find('div').css("visibility", "hidden");
+    });
   }
 })
 
+$('.product__button-compare').click(
+  function() {
+    $(this).toggleClass("product__button-compare--act");
+  });
+
+  $('.product__button-hint').click(
+    function() {
+      $(this).toggleClass("product__button-hint--act");
+    });
+
+//  View
 $('.view-button').click(
   function() {
     if($(this).hasClass("filter__plit") && $(this).hasClass("filter__plit_active") == false){
@@ -105,33 +204,21 @@ $('.filter__list').click(
 
  
 
-$('.prompt').click(
-    function() {
-      var title = $(this).attr('title');
-      if (title == "Добавить в закладки"){
-        $(this).toggleClass("product__button-hint--active");
-        $(this).attr("title", "Удалить из закладок");
-      }
-      else if (title == "Удалить из закладок"){
-        $(this).deleteClass("product__button-hint--active");
-        $(this).attr("title", "Добавить в закладки");
-      }
-    }
-  );
 
-  $('.prompt').hover(
-    function() {
-      console.log(title);
-      
-      $(this).find('div')
-        .css("visibility", "visible");
-    }
-  ).mouseleave(function() {
-    $(this).find('div')
-    .css("visibility", "hidden");
-  });
 
-  
+// 
+$('.spoiler').click(
+  function() {
+    $(this).toggleClass("spoiler_active").next().slideToggle()
+  }
+);
+
+// Свернуть 
+$(".subcotegory__title").click(function(){
+  $(this).toggleClass("subcotegory__title_a");
+  $(".subcotegory__wrapper").toggle();
+
+});
 // Маска для телефона
 $(".mask").mask("+7 (999) 999 99 99");
 $(".mask2").mask("8 (999) 999 99 99");
@@ -190,6 +277,8 @@ $('select').each(function(){
       $(this).toggleClass('select_active').next('ul.select-options').toggle();
   });
 
+
+
   $listItems.click(function(e) {
       e.stopPropagation();
       $styledSelect.text($(this).text()).removeClass('select_active');
@@ -213,9 +302,59 @@ $('select').each(function(){
 
 });
 
+// show for filter
+$(".aside__checks-show").click(function(e) {
+  if($(this).find("a").html() == "Свернуть"){
+    $(this).find("a").html("Показать все");
+
+  }
+  else{
+    $(this).find("a").html("Свернуть");
+  }
+  $(this).prev().toggleClass("aside__checks-hidden");
+});
+
 // Item slider
-$(".item__thumb").click(function(){
+$(".item__thumb a").click(function(event){
   $(".item__image").find("img").attr('src', $(this).find("img").attr('src'));
+  event.stopPropagation();
+  return false;
+});
+
+// Slider with 2 handles
+$(function () {
+  // the code belows assume the colors array is exactly one element bigger than the handlers array.
+  var handlers = [0,100];
+  var colors = ["#fff", "rgb(77, 192, 61)", "#fff"];
+  updateColors(handlers);
+  
+  $(".sliderr").slider({
+      min: 0,
+      max: 100,
+      values: handlers,
+      slide: function (evt, ui) {
+          updateColors(ui.values);
+      }
+  });
+  
+
+  $("input.sliderValue").change(function() {
+    $(".color-region").css("margin-left", $(this).eq(0).val()+"%");
+    $(".color-region").css("margin-right", 100-$(this).eq(1).val()+"%");
+    var handlers = [$(this).eq(0).val(),$(this).eq(0).val(1)];
+    $(".sliderr").slider({
+      values: handlers,
+  });
+  });
+
+  function updateColors(values) {
+    $(".color-region").css("margin-left", values[0]+"%");
+    $(".color-region").css("margin-right", 100-values[1]+"%");
+    $("input.sliderValue").eq(0).val(values[0]);
+    $("input.sliderValue").eq(1).val(values[1]);
+    
+   
+}
 });
 
 // Item Gallery
@@ -232,26 +371,29 @@ $(".item__thumb").click(function(){
 
   // Owl Carousel
 
-//   $('.owl-carousel').owlCarousel({
-//     loop:true,
-//     margin:20,
-//     nav:true,
-//     dots: false,
-//     responsive:{
-//         0:{
-//             items:1
-//         },
-//         600:{
-//             items:3
-//         },
-//         1000:{
-//             items:4
-//         },
-//         1180:{
-//           items:5
-//         }
-//     }
-// })
+  $('.owl-main').owlCarousel({
+    loop:true,
+    margin:20,
+    nav:true,
+    dots: false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        700:{
+          items: 3
+        },
+        1000:{
+            items:4
+        },
+        1180:{
+          items:5
+        }
+    }
+})
 
 
 
@@ -263,9 +405,9 @@ $('.owl-items').owlCarousel({
   slideBy: 3,
   responsive:{
       0:{
-          items:1
+          items:3
       },
-      600:{
+      700:{
           items:3
       },
       1000:{
@@ -273,6 +415,21 @@ $('.owl-items').owlCarousel({
       },
       1180:{
         items:5
+      }
+  }
+})
+
+$('.owl-help').owlCarousel({
+  loop:true,
+  margin:20,
+  dots: true,
+  slideBy: 3,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items: 1
       }
   }
 })
@@ -291,12 +448,5 @@ $("#slider").slider({
       }
   }
 });
- 
-
-$("input.sliderValue").change(function() {
-  var $this = $(this);
-  $("#slider").slider("values", $this.data("index"), $this.val());
-});
-  
 });
 

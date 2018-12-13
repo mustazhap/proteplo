@@ -45,3 +45,24 @@
         line-height: 18px;
     }
 }
+
+.owl-help{
+    display: none !important;
+    .help{
+        &__item{
+            width: 98%;
+            border-radius: 5px;
+            box-sizing: border-box;
+            *{
+                box-sizing: border-box;
+            }
+        }
+
+        &__text{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            font-size: 15px;
+        }
+    }
+}
